@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
+  m_Name: MainEntryWay
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
+  roomName: Entry Way
+  description: 'You are in a small entry way. There are three doors, each leading
+    to different locations, on the floor is a black carpet. '
+  floorNumber: 1
+  roomImage: {fileID: 0}
+  props:
+  - {fileID: 11400000, guid: 2aa1dea8f2e0a5b49a1d7e7875ee80aa, type: 2}
+  characters: []
+  connections:
+  - connectedRoom: {fileID: 11400000, guid: 4e8430a2d721a684a8be31d71b6ac817, type: 2}
+    direction: South
+    isLocked: 1
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 

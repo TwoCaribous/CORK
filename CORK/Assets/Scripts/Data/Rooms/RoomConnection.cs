@@ -29,6 +29,12 @@ namespace CORK.Data.Rooms
                  "until revealed by gameplay logic.")]
         public bool isHidden;
 
+        [Tooltip("If true, the player has already passed through this connection at least once.")]
+        public bool hasBeenVisited;
+
+        [Tooltip("A short description of the door or passage (e.g. 'a heavy oak door', 'a narrow gap in the wall').")]
+        public string doorDescription;
+
         /// <summary>
         /// Convenience accessor for the connected room's name.
         /// Safe to call even if connectedRoom is null.
