@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8bdd3c1d79d6934793f96f094bf50e8, type: 3}
   m_Name: Menu
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
-  propName: Menu
+  propName: Bar Menu
   description: 'A menu printed on printer paper reading:
 
     -Coffee $3

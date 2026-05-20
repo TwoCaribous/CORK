@@ -10,11 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b59d0aa06ed27e4d8175e82336828e1, type: 3}
-  m_Name: Billy Two Step
+  m_Name: Hacking Henry
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.EssentialCharacterData
-  characterName: Billy Two Step
-  description: A man stands ready in the middle of room, wearing nothing but cowboy
-    boots and pink boxers
+  characterName: Hacking Henry
+  description: Slouched over a computer typing furiously, you see a young man with
+    glasses... He is deeply engrosed in his work.
   characterType: 0
   portrait: {fileID: 0}
-  primaryDialogue: {fileID: 11400000, guid: 9a524700bf7a41a45a4e89b85da1af77, type: 2}
+  conditionalDialogues:
+  - condition:
+      conditionType: 1
+      requiredProp: {fileID: 0}
+    dialogue: {fileID: 0}
+  primaryDialogue: {fileID: 0}
