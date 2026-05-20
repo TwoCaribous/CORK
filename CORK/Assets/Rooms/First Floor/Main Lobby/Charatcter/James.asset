@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c885fc49a73507941b5d7d83e8ee339b, type: 3}
-  m_Name: Bobby Security Guy
+  m_Name: James
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.RandomCharacterData
-  characterName: Security Guard
-  description: A bald man dressed in security attire sits atop a stool
-  characterType: 1
+  characterName: Cool Guy James
+  description: A very cool dude with sun glasses and a fadora stands leaning on the
+    wall
+  characterType: 0
   portrait: {fileID: 0}
   ambientLines:
-  - speakerName: Bobby
-    text: 'I hear tensions are rising between the Computer Science and Design students...
-      I hope it doesnt end badly '
+  - speakerName: Really Super Cool Guy
+    text: Only chumps get to class on time. I always show up 5 minutes late... To
+      esablish my dominance

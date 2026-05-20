@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c885fc49a73507941b5d7d83e8ee339b, type: 3}
+  m_Name: Andy
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.RandomCharacterData
+  characterName: Andy
+  description: 'A young man kneels at the base of the stairs, the floor is littered
+    with papers and he is struggling to pick them all up. '
+  characterType: 1
+  portrait: {fileID: 0}
+  ambientLines:
+  - speakerName: Andy
+    text: OOOHHHH JEEEZ!!!! I sure do hope I make it to class on time... it would
+      be a shame to miss class
+  - speakerName: Andy
+    text: 'Missing class is as bad as missing the birth of your first born child. '

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
   roomName: Entry Way
   description: 'You are in a small entry way. There are three doors, each leading
-    to different locations, on the floor is a black carpet. '
+    to different locations including the one you came from.  '
   floorNumber: 1
   roomImage: {fileID: 0}
   props:
@@ -26,4 +26,12 @@ MonoBehaviour:
     isLocked: 1
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: 
+    doorDescription: It is a clear glass door leading to what looks like a dinning
+      area and bar.
+  - connectedRoom: {fileID: 11400000, guid: 7245402dffdaa0446abd954223a66f85, type: 2}
+    direction: North
+    isLocked: 1
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: It is a clear glass door. On the other side you see a large
+      open room with stairs and elevators. Some people are in there.

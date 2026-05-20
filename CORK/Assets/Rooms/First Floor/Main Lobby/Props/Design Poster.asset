@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8bdd3c1d79d6934793f96f094bf50e8, type: 3}
-  m_Name: Rockstar
+  m_Name: Design Poster
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
-  propName: Rockstar
-  description: There is a small red can sitting on the sidetable at the base of the
-    stairs. It's label reads "Rockstar Energy"
+  propName: Design Poster
+  description: 'Hanging on the wall is a poster with the image of a fashionable student
+    holding an American flag. There is text on the bottom reading : Join the design
+    cause and rid this school of the computer science NERDS!'
   canBeTaken: 1
   propImage: {fileID: 0}
