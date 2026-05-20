@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f71d2619f685a2f4d8417babd2ea25de, type: 3}
   m_Name: Look
   m_EditorClassIdentifier: Assembly-CSharp::Look
-  keyWord: 
+  keyWord: look

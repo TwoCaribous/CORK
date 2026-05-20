@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c161df529631a14ba1714b6f57e6f81, type: 3}
   m_Name: Inspect
   m_EditorClassIdentifier: Assembly-CSharp::Inspect
-  keyWord: 
+  keyWord: inspect

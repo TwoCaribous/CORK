@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 376b9ca41561fe949ac40359db3a5cd3, type: 3}
   m_Name: Talk
   m_EditorClassIdentifier: Assembly-CSharp::Talk
-  keyWord: 
+  keyWord: talk

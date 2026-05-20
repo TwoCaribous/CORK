@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f735ac76dc146e47a0e9c2ee86cf2c9, type: 3}
   m_Name: Inventory
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
-  keyWord: 
+  keyWord: inventory
