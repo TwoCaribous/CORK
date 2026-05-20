@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+using CORK.Data.Rooms;
 
 public class RoomNavigation : MonoBehaviour
 {
-    public Room currentRoom;
+    public RoomData currentRoom;
 
-
-    Dictionary<string, Room> exitDictionary = new Dictionary<string, Room>();
+    Dictionary<string, RoomData> exitDictionary = new Dictionary<string, RoomData>();
     GameController controller;
 
     void Awake()
@@ -17,26 +16,39 @@ public class RoomNavigation : MonoBehaviour
 
     public void UnpackExitsInRoom()
     {
-        for (int i = 0; i < currentRoom.exits.Length; i++)
+        foreach (RoomConnection connection in currentRoom.connections)
         {
-            exitDictionary.Add(currentRoom.exits[i].keyString, currentRoom.exits[i].valueRoom);
-            controller.interactionDescriptionsInRoom.Add(currentRoom.exits[i].exitDescription);
+            if (connection.isHidden || connection.connectedRoom == null)
+                continue;
+
+            string directionKey = connection.direction.ToLower();
+            string nameKey = connection.connectedRoom.roomName.ToLower();
+
+            if (!exitDictionary.ContainsKey(directionKey))
+                exitDictionary.Add(directionKey, connection.connectedRoom);
+
+            if (!exitDictionary.ContainsKey(nameKey))
+                exitDictionary.Add(nameKey, connection.connectedRoom);
+
+            if (!string.IsNullOrEmpty(connection.doorDescription))
+                controller.interactionDescriptionsInRoom.Add(connection.doorDescription);
         }
     }
 
-    public void AttemptToChangeRooms(string directionNoun)
+    public void AttemptToChangeRooms(string noun)
     {
-        if (exitDictionary.ContainsKey(directionNoun))
+        string key = noun.ToLower();
+
+        if (exitDictionary.ContainsKey(key))
         {
-            currentRoom = exitDictionary[directionNoun];
-            controller.LogStringWithReturn("You head off to the " + directionNoun);
+            currentRoom = exitDictionary[key];
+            controller.LogStringWithReturn("You head to " + currentRoom.roomName + ".");
             controller.DisplayRoomText();
         }
         else
         {
-            controller.LogStringWithReturn("There is no path to the " + directionNoun);
+            controller.LogStringWithReturn("There is no path to \"" + noun + "\".");
         }
-
     }
 
     public void ClearExits()
