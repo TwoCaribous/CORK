@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using CORK.Data.Rooms;
 
 [CreateAssetMenu(menuName = "TextAdventure/InputActions/Move")]
 public class Move : InputAction
@@ -8,12 +9,24 @@ public class Move : InputAction
     {
         if (separatedInputWords.Length < 2)
         {
-            List<string> roomNames = controller.roomNavigation.currentRoom.GetConnectedRoomNames();
+            List<RoomConnection> connections = controller.roomNavigation.currentRoom.connections;
+            List<string> exitLines = new List<string>();
 
-            if (roomNames == null || roomNames.Count == 0)
+            foreach (RoomConnection conn in connections)
+            {
+                if (!conn.isHidden && conn.connectedRoom != null && !string.IsNullOrEmpty(conn.doorDescription))
+                {
+                    string line = conn.hasBeenVisited
+                        ? "To the " + conn.direction + " (" + conn.connectedRoom.roomName + "), " + conn.doorDescription
+                        : "To the " + conn.direction + ", " + conn.doorDescription;
+                    exitLines.Add(line);
+                }
+            }
+
+            if (exitLines.Count == 0)
                 controller.LogStringWithReturn("There are no exits from here.");
             else
-                controller.LogStringWithReturn("You can go to: " + string.Join(", ", roomNames) + ".");
+                controller.LogStringWithReturn(string.Join("\n", exitLines));
         }
         else
         {

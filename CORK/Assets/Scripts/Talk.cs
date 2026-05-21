@@ -8,71 +8,87 @@ public class Talk : InputAction
 {
     public override void RespondToInput(GameController controller, string[] separatedInputWords)
     {
-        List<CharacterData> characters = controller.roomNavigation.currentRoom.characters;
-
         if (separatedInputWords.Length < 2)
         {
-            if (characters == null || characters.Count == 0)
-            {
-                controller.LogStringWithReturn("There is nobody here to talk to.");
-                return;
-            }
-
-            List<string> names = new List<string>();
-            foreach (CharacterData character in characters)
-            {
-                if (character != null) names.Add(character.characterName);
-            }
-            controller.LogStringWithReturn("People here: " + string.Join(", ", names) + ".");
+            controller.LogStringWithReturn("Talk to whom? Look around to see who's here.");
+            return;
         }
-        else
+
+        string input = string.Join(" ", separatedInputWords, 1, separatedInputWords.Length - 1);
+        List<CharacterData> characters = controller.roomNavigation.currentRoom.characters;
+
+        CharacterData found = null;
+        foreach (CharacterData character in characters)
         {
-            string targetName = string.Join(" ", separatedInputWords, 1, separatedInputWords.Length - 1);
+            if (character != null && string.Equals(character.characterName, input, System.StringComparison.OrdinalIgnoreCase))
+            { found = character; break; }
+        }
 
-            CharacterData found = null;
-            if (characters != null)
+        if (found == null)
+        {
+            List<CharacterData> matches = FindCharactersByDescription(characters, input);
+            if (matches.Count == 1)
+                found = matches[0];
+            else if (matches.Count > 1)
             {
-                foreach (CharacterData character in characters)
-                {
-                    if (character != null && string.Equals(character.characterName, targetName, System.StringComparison.OrdinalIgnoreCase))
-                    {
-                        found = character;
-                        break;
-                    }
-                }
-            }
-
-            if (found == null)
-            {
-                controller.LogStringWithReturn("There is nobody named \"" + targetName + "\" here.");
+                controller.LogStringWithReturn("That could describe several people here. Try being more specific.");
                 return;
             }
+        }
 
-            if (found is EssentialCharacterData essential)
+        if (found == null)
+        {
+            controller.LogStringWithReturn("You don't see anyone like that here.");
+            return;
+        }
+
+        bool newMeeting = !found.hasBeenMet;
+        found.hasBeenMet = true;
+
+        if (found is EssentialCharacterData essential)
+        {
+            DialogueEntry entry = essential.GetDialogue(controller.playerInventory);
+            if (entry != null && entry.lines != null && entry.lines.Count > 0)
             {
-                DialogueEntry entry = essential.GetDialogue(controller.playerInventory);
-                if (entry != null && entry.lines != null && entry.lines.Count > 0)
-                {
-                    foreach (DialogueLine line in entry.lines)
-                        controller.LogStringWithReturn(line.speakerName + ": " + line.text);
-                }
-                else
-                {
-                    controller.LogStringWithReturn(found.characterName + " has nothing to say.");
-                }
-            }
-            else if (found is RandomCharacterData random)
-            {
-                DialogueLine line = random.GetRandomAmbientLine();
-                if (line != null)
+                foreach (DialogueLine line in entry.lines)
                     controller.LogStringWithReturn(line.speakerName + ": " + line.text);
-                else
-                    controller.LogStringWithReturn(found.characterName + " says nothing.");
             }
             else
             {
-                controller.LogStringWithReturn(found.characterName + " has nothing to say.");
+                controller.LogStringWithReturn("They don't seem to want to talk.");
             }
         }
+        else if (found is RandomCharacterData random)
+        {
+            DialogueLine line = random.GetRandomAmbientLine();
+            if (line != null)
+                controller.LogStringWithReturn(line.speakerName + ": " + line.text);
+            else
+                controller.LogStringWithReturn("They say nothing.");
+        }
+        else
+        {
+            controller.LogStringWithReturn("They don't seem to want to talk.");
+        }
+
+        if (newMeeting)
+            controller.LogStringWithReturn("You learn their name is: " + found.characterName + ".");
+    }
+
+    static List<CharacterData> FindCharactersByDescription(List<CharacterData> characters, string input)
+    {
+        List<CharacterData> matches = new List<CharacterData>();
+        if (characters == null) return matches;
+
+        foreach (CharacterData character in characters)
+        {
+            if (character == null || string.IsNullOrEmpty(character.description)) continue;
+            if (character.description.IndexOf(input, System.StringComparison.OrdinalIgnoreCase) >= 0)
+                matches.Add(character);
+        }
+
+        return matches;
+
+        return null;
     }
 }

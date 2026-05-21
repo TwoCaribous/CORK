@@ -7,44 +7,61 @@ public class Inspect : InputAction
 {
     public override void RespondToInput(GameController controller, string[] separatedInputWords)
     {
-        List<PropData> props = controller.roomNavigation.currentRoom.props;
-
         if (separatedInputWords.Length < 2)
         {
-            if (props == null || props.Count == 0)
+            controller.LogStringWithReturn("Inspect what? Look around to find something of interest.");
+            return;
+        }
+
+        string input = string.Join(" ", separatedInputWords, 1, separatedInputWords.Length - 1);
+        List<PropData> props = controller.roomNavigation.currentRoom.props;
+
+        PropData found = null;
+        foreach (PropData prop in props)
+        {
+            if (prop != null && string.Equals(prop.propName, input, System.StringComparison.OrdinalIgnoreCase))
+            { found = prop; break; }
+        }
+
+        if (found == null)
+        {
+            List<PropData> matches = FindPropsByDescription(props, input);
+            if (matches.Count == 1)
+                found = matches[0];
+            else if (matches.Count > 1)
             {
-                controller.LogStringWithReturn("There is nothing to inspect here.");
+                controller.LogStringWithReturn("That could describe several things here. Try being more specific.");
                 return;
             }
-
-            List<string> names = new List<string>();
-            foreach (PropData prop in props)
-            {
-                if (prop != null) names.Add(prop.propName);
-            }
-            controller.LogStringWithReturn("You can inspect: " + string.Join(", ", names) + ".");
         }
-        else
+
+        if (found == null)
         {
-            string targetName = string.Join(" ", separatedInputWords, 1, separatedInputWords.Length - 1);
-
-            PropData found = null;
-            if (props != null)
-            {
-                foreach (PropData prop in props)
-                {
-                    if (prop != null && string.Equals(prop.propName, targetName, System.StringComparison.OrdinalIgnoreCase))
-                    {
-                        found = prop;
-                        break;
-                    }
-                }
-            }
-
-            if (found != null)
-                controller.LogStringWithReturn(found.description);
-            else
-                controller.LogStringWithReturn("You don't see \"" + targetName + "\" here.");
+            controller.LogStringWithReturn("You don't find anything like that here.");
+            return;
         }
+
+        bool newDiscovery = !found.hasBeenDiscovered;
+        found.hasBeenDiscovered = true;
+
+        controller.LogStringWithReturn(found.description);
+
+        if (newDiscovery)
+            controller.LogStringWithReturn("You'll remember this as: " + found.propName + ".");
+    }
+
+    static List<PropData> FindPropsByDescription(List<PropData> props, string input)
+    {
+        List<PropData> matches = new List<PropData>();
+        if (props == null) return matches;
+
+        foreach (PropData prop in props)
+        {
+            if (prop == null || string.IsNullOrEmpty(prop.description)) continue;
+            if (prop.description.IndexOf(input, System.StringComparison.OrdinalIgnoreCase) >= 0)
+                matches.Add(prop);
+        }
+
+        return matches;
     }
 }

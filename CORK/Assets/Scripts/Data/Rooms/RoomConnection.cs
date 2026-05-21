@@ -25,6 +25,9 @@ namespace CORK.Data.Rooms
         [Tooltip("If true, this exit is locked and cannot be used until unlocked by gameplay logic.")]
         public bool isLocked;
 
+        [Tooltip("Message shown when the player tries to use this exit while locked. Leave empty for a default message.")]
+        public string lockedMessage;
+
         [Tooltip("If true, this exit is hidden and will not appear in the move list " +
                  "until revealed by gameplay logic.")]
         public bool isHidden;

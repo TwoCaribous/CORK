@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace CORK.Data.Characters
@@ -23,5 +24,9 @@ namespace CORK.Data.Characters
 
         [Tooltip("Optional portrait sprite shown during interactions.")]
         public Sprite portrait;
+
+
+        [Tooltip("Set at runtime when the player has spoken to this character for the first time. Resets when Play Mode ends.")]
+        public bool hasBeenMet;
     }
 }

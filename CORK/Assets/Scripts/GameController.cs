@@ -43,33 +43,28 @@ public class GameController : MonoBehaviour
         UpdateRoomImage();
         UnpackRoom();
 
-        string roomText = roomNavigation.currentRoom.description;
+        string roomText = roomNavigation.currentRoom.roomName + "\n" + roomNavigation.currentRoom.description;
 
-        if (roomNavigation.currentRoom.props != null && roomNavigation.currentRoom.props.Count > 0)
+        foreach (PropData prop in roomNavigation.currentRoom.props)
         {
-            List<string> propNames = new List<string>();
-            foreach (PropData prop in roomNavigation.currentRoom.props)
-            {
-                if (prop != null) propNames.Add(prop.propName);
-            }
-            if (propNames.Count > 0)
-                roomText += "\nYou see: " + string.Join(", ", propNames) + ".";
+            if (prop == null) continue;
+            if (prop.hasBeenDiscovered)
+                roomText += "\n" + prop.propName + " - " + prop.description;
+            else if (!string.IsNullOrEmpty(prop.description))
+                roomText += "\n" + prop.description;
         }
 
-        if (roomNavigation.currentRoom.characters != null && roomNavigation.currentRoom.characters.Count > 0)
+        foreach (CharacterData character in roomNavigation.currentRoom.characters)
         {
-            List<string> charNames = new List<string>();
-            foreach (CharacterData character in roomNavigation.currentRoom.characters)
-            {
-                if (character != null) charNames.Add(character.characterName);
-            }
-            if (charNames.Count > 0)
-                roomText += "\nPeople here: " + string.Join(", ", charNames) + ".";
+            if (character == null) continue;
+            if (character.hasBeenMet)
+                roomText += "\n" + character.characterName + " - " + character.description;
+            else if (!string.IsNullOrEmpty(character.description))
+                roomText += "\n" + character.description;
         }
 
-        string joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray());
-        if (!string.IsNullOrEmpty(joinedInteractionDescriptions))
-            roomText += "\n" + joinedInteractionDescriptions;
+        if (interactionDescriptionsInRoom.Count > 0)
+            roomText += "\n" + string.Join("\n", interactionDescriptionsInRoom.ToArray());
 
         LogStringWithReturn(roomText);
     }
@@ -108,5 +103,21 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
+    }
+
+    void OnDestroy()
+    {
+        foreach (RoomData room in Resources.FindObjectsOfTypeAll<RoomData>())
+            foreach (RoomConnection connection in room.connections)
+                connection.hasBeenVisited = false;
+
+        foreach (PropData prop in Resources.FindObjectsOfTypeAll<PropData>())
+            prop.hasBeenDiscovered = false;
+
+        foreach (CharacterData character in Resources.FindObjectsOfTypeAll<CharacterData>())
+            character.hasBeenMet = false;
+
+        if (playerInventory != null)
+            playerInventory.items.Clear();
     }
 }
