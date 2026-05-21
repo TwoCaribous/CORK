@@ -27,6 +27,15 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        LogStringWithReturn(
+            "Welcome to CORK.\n" +
+            "Commands:\n" +
+            "  look              - describe your surroundings\n" +
+            "  move [direction]  - travel through an exit (e.g. 'move north', 'move glass door')\n" +
+            "  inspect [thing]   - examine something nearby (e.g. 'inspect poster')\n" +
+            "  talk [person]     - talk to someone nearby (e.g. 'talk bartender')\n" +
+            "  inventory         - check what you're carrying\n"
+        );
         DisplayRoomText();
         DisplayLoggedText();
     }
