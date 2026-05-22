@@ -16,7 +16,7 @@ MonoBehaviour:
   description: 'You are in a small entry way. There are three doors, each leading
     to different locations including the one you came from.  '
   floorNumber: 1
-  roomImage: {fileID: 0}
+  roomImage: {fileID: -6095712193479976735, guid: d4125791d5515474cb5b59deb7151ef7, type: 3}
   props:
   - {fileID: 11400000, guid: 2aa1dea8f2e0a5b49a1d7e7875ee80aa, type: 2}
   characters:

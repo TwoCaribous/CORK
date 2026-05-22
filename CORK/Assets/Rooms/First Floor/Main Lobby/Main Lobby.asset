@@ -17,7 +17,7 @@ MonoBehaviour:
     places to explore, new secrets to find. The ceilings are tall and the possibilities
     endless... '
   floorNumber: 1
-  roomImage: {fileID: 0}
+  roomImage: {fileID: -6095712193479976735, guid: d4125791d5515474cb5b59deb7151ef7, type: 3}
   props:
   - {fileID: 11400000, guid: fc8d28590a13adc4688ad14f360232d4, type: 2}
   characters:
@@ -27,6 +27,7 @@ MonoBehaviour:
   - connectedRoom: {fileID: 11400000, guid: 49728963a222ef646bcba03ff23683b8, type: 2}
     direction: South
     isLocked: 0
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: It is a clear class door. On the other side is the entry way
@@ -34,6 +35,7 @@ MonoBehaviour:
   - connectedRoom: {fileID: 11400000, guid: 77076d61def51254cb177086f0a15614, type: 2}
     direction: West
     isLocked: 1
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: It is a clear class door. On the other side you see an office
@@ -41,6 +43,7 @@ MonoBehaviour:
   - connectedRoom: {fileID: 11400000, guid: 25c4f2a478e799542930455270c2b5fa, type: 2}
     direction: West
     isLocked: 1
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: It is a clear class door. On the other side you see an office
@@ -48,6 +51,7 @@ MonoBehaviour:
   - connectedRoom: {fileID: 11400000, guid: 47e0bf08b75e8044895799a8f7e52194, type: 2}
     direction: East
     isLocked: 1
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: It is a clear glass door with STCU written on it. Though STCU
@@ -55,6 +59,7 @@ MonoBehaviour:
   - connectedRoom: {fileID: 11400000, guid: cc03f6f00a5ae7a45b4fbf1c9e129560, type: 2}
     direction: East
     isLocked: 0
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: It is a hallway that leads further into the building. You see
