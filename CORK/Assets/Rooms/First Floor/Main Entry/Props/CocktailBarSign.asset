@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: CocktailBarSign
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
   propName: Sign On The Wall
-  description: 'A small sign that reads:
+  description: 'On the south wall, a small sign that reads:
 
-    Bella''s Cocktail Bar and Lounge
+    Bella''s Cocktail
+    Bar and Lounge
 
-    Hours:
-    10am - 3pm'
+    Hours: 10am - 3pm'
   canBeTaken: 1
   propImage: {fileID: 0}
+  hasBeenDiscovered: 0

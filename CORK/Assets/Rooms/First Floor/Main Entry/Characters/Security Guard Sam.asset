@@ -17,6 +17,7 @@ MonoBehaviour:
     stands awaiting anyone wanting to come in. '
   characterType: 0
   portrait: {fileID: 0}
+  hasBeenMet: 0
   conditionalDialogues:
   - condition:
       conditionType: 1

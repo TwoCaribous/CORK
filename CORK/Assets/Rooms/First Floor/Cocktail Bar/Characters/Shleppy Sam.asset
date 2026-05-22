@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Shleppy Sam
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.RandomCharacterData
   characterName: Shleppy Sam
-  description: A guy
+  description: 'There is a guy in a suit sitting at a table sipping from a coffee
+    mug. He is reading a newspaper. '
   characterType: 1
   portrait: {fileID: 0}
+  hasBeenMet: 0
   ambientLines:
   - speakerName: Sam
     text: I don't like CS students... Dont talk to me

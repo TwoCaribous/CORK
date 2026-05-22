@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Bartender
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.RandomCharacterData
   characterName: Bartender
-  description: 'A man with long hair tied back in a long pony tail. He stands behind
-    a register awaiting customers. '
+  description: 'There is man with long hair tied back in a long pony tail. He stands
+    behind a register awaiting customers. '
   characterType: 0
   portrait: {fileID: 0}
+  hasBeenMet: 0
   ambientLines:
   - speakerName: Bartender
     text: What'll you have?

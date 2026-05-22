@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Menu
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
   propName: Bar Menu
-  description: 'A menu printed on printer paper reading:
+  description: 'You see a menu printed on printer paper reading:
 
     -Coffee $3
 
@@ -25,3 +25,4 @@ MonoBehaviour:
     -Redbull $2'
   canBeTaken: 1
   propImage: {fileID: 0}
+  hasBeenDiscovered: 0

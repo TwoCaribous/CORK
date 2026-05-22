@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace CORK.Data.Props
@@ -21,5 +22,8 @@ namespace CORK.Data.Props
 
         [Tooltip("Optional sprite shown when this prop is examined. Leave empty for text-only props.")]
         public Sprite propImage;
+
+        [Tooltip("Set at runtime when the player has inspected this prop for the first time. Resets when Play Mode ends.")]
+        public bool hasBeenDiscovered;
     }
 }

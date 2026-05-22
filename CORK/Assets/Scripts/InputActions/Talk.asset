@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4305ce92b64e9be45b75120e1105621e, type: 3}
-  m_Name: Go
-  m_EditorClassIdentifier: Assembly-CSharp::Go
-  keyWord: go
+  m_Script: {fileID: 11500000, guid: 376b9ca41561fe949ac40359db3a5cd3, type: 3}
+  m_Name: Talk
+  m_EditorClassIdentifier: Assembly-CSharp::Talk
+  keyWord: talk
