@@ -12,16 +12,30 @@ public class Move : InputAction
             List<RoomConnection> connections = controller.roomNavigation.currentRoom.connections;
             List<string> exitLines = new List<string>();
 
-            foreach (RoomConnection conn in connections)
-            {
-                if (!conn.isHidden && conn.connectedRoom != null && !string.IsNullOrEmpty(conn.doorDescription))
-                {
-                    string line = conn.hasBeenVisited
-                        ? "To the " + conn.direction + " (" + conn.connectedRoom.roomName + "), " + conn.doorDescription
-                        : "To the " + conn.direction + ", " + conn.doorDescription;
-                    exitLines.Add(line);
-                }
-            }
+foreach (RoomConnection conn in connections)
+{
+    if (!conn.isHidden && conn.connectedRoom != null && !string.IsNullOrEmpty(conn.doorDescription))
+    {
+        bool isUp = string.Equals(conn.direction?.Trim(), "up", System.StringComparison.OrdinalIgnoreCase);
+
+        string line;
+
+        if (isUp)
+        {
+            line = conn.hasBeenVisited
+                ? "Above you (" + conn.connectedRoom.roomName + "), " + conn.doorDescription
+                : "Above you, " + conn.doorDescription;
+        }
+        else
+        {
+            line = conn.hasBeenVisited
+                ? "To the " + conn.direction + " (" + conn.connectedRoom.roomName + "), " + conn.doorDescription
+                : "To the " + conn.direction + ", " + conn.doorDescription;
+        }
+
+        exitLines.Add(line);
+    }
+}
 
             if (exitLines.Count == 0)
                 controller.LogStringWithReturn("There are no exits from here.");
