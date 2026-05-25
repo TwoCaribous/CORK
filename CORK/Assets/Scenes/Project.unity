@@ -457,8 +457,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e923524717d8f5c42b7d8853276dd861, type: 2}
   - {fileID: 11400000, guid: ee38f2d7e88d28b43b2fe3e4f346d19a, type: 2}
   - {fileID: 11400000, guid: 85bb04541f53ea44aa617773df93cf30, type: 2}
+  - {fileID: 11400000, guid: 9fa2e3d869db4814b9e47ca2d0dc907d, type: 2}
+  - {fileID: 11400000, guid: 36260eab3a146984d826c70c85c96f6c, type: 2}
+  - {fileID: 11400000, guid: 6dfbc8bb07f541d4b8e307e858736689, type: 2}
+  - {fileID: 11400000, guid: 62b14bd8ce1e2a94087e36f05f96b34a, type: 2}
+  - {fileID: 11400000, guid: 4600fa37ad6fc7d42828b7488b9aee3d, type: 2}
+  - {fileID: 11400000, guid: 3447b395242c1d245a0b1c10f39fbe79, type: 2}
+  - {fileID: 11400000, guid: 56a154c1a14c6c849b74a17ccd04e191, type: 2}
   roomImageDisplay: {fileID: 996064473}
   playerInventory: {fileID: 11400000, guid: e7a6e3a737bf80d44b467e62a8e26b2e, type: 2}
+  gameFlags: {fileID: 11400000, guid: 0b772c1af404cfb4681a722e5b981ebb, type: 2}
   roomNavigation: {fileID: 0}
   interactionDescriptionsInRoom: []
 --- !u!114 &920520915
@@ -534,7 +542,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0050049, y: 354}
+  m_AnchoredPosition: {x: -0.005004883, y: 287}
   m_SizeDelta: {x: 830, y: 285.9771}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &996064473

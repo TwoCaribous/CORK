@@ -17,9 +17,11 @@ MonoBehaviour:
     places to explore, new secrets to find. The ceilings are tall and the possibilities
     endless... '
   floorNumber: 1
-  roomImage: {fileID: -6095712193479976735, guid: d4125791d5515474cb5b59deb7151ef7, type: 3}
+  roomImage: {fileID: 2088623159730601780, guid: d636a66859d9c864591218d66de3a4d0, type: 3}
   props:
   - {fileID: 11400000, guid: fc8d28590a13adc4688ad14f360232d4, type: 2}
+  - {fileID: 11400000, guid: 9d2ed01c836d94146828a90b4a27800d, type: 2}
+  - {fileID: 11400000, guid: cb0d253a63246034e8cbb1d4838a8b47, type: 2}
   characters:
   - {fileID: 11400000, guid: 64ffb18766e937e49a607bbbc39ec7df, type: 2}
   - {fileID: 11400000, guid: 121e5a6348555064bbcbcd0612cd3979, type: 2}
@@ -32,6 +34,8 @@ MonoBehaviour:
     hasBeenVisited: 0
     doorDescription: It is a clear class door. On the other side is the entry way
       to the Catalyst Building
+    displayName: Entryway
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 77076d61def51254cb177086f0a15614, type: 2}
     direction: West
     isLocked: 1
@@ -40,6 +44,8 @@ MonoBehaviour:
     hasBeenVisited: 0
     doorDescription: It is a clear class door. On the other side you see an office
       space. This doesnt look like eastern...
+    displayName: Office Space
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 25c4f2a478e799542930455270c2b5fa, type: 2}
     direction: West
     isLocked: 1
@@ -48,6 +54,8 @@ MonoBehaviour:
     hasBeenVisited: 0
     doorDescription: It is a clear class door. On the other side you see an office
       space. This doesnt look like eastern...
+    displayName: Offices
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 47e0bf08b75e8044895799a8f7e52194, type: 2}
     direction: East
     isLocked: 1
@@ -56,6 +64,8 @@ MonoBehaviour:
     hasBeenVisited: 0
     doorDescription: It is a clear glass door with STCU written on it. Though STCU
       is a apokane class, it is not EWU... I dont think you can go there
+    displayName: STCU
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: cc03f6f00a5ae7a45b4fbf1c9e129560, type: 2}
     direction: East
     isLocked: 0
@@ -64,6 +74,8 @@ MonoBehaviour:
     hasBeenVisited: 0
     doorDescription: It is a hallway that leads further into the building. You see
       many doors and a bathroom sign.
+    displayName: Hallway Entry
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: c788f5ff1951908489d34a630b8b3b56, type: 2}
     direction: up
     isLocked: 0
@@ -71,3 +83,5 @@ MonoBehaviour:
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: A larger black staircase leading to the second floor.
+    displayName: 
+    requiredKey: {fileID: 0}

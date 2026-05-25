@@ -25,29 +25,37 @@ MonoBehaviour:
   - connectedRoom: {fileID: 11400000, guid: 7245402dffdaa0446abd954223a66f85, type: 2}
     direction: West
     isLocked: 0
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: There is no door, you can see directly into the main lobby.
+    displayName: Lobby
   - connectedRoom: {fileID: 11400000, guid: daf7754797fa55f489031ea866123c1e, type: 2}
     direction: South
     isLocked: 0
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: It is a heavy metal door with a small slit window and a push
       bar. As you peer throuhg the small window you see desks aligned in rows with
       chairs on the far side of each desk.
+    displayName: 193
   - connectedRoom: {fileID: 11400000, guid: 20a9b0a52448b0f40b6bb3de6613e939, type: 2}
     direction: South
     isLocked: 0
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: It is a heavy metal door with a small slit window and a push
       bar. As you peer throuhg the small window you see desks aligned in rows with
       chairs on the far side of each desk.
+    displayName: 194
   - connectedRoom: {fileID: 11400000, guid: b832f5505b9bcd64ebac595d01028904, type: 2}
     direction: East
     isLocked: 0
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: A heavy metal door sits propped open. On the other side you
       see a room littered with desks. Each desk has a computer desktop atop it.
+    displayName: 195

@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
   m_Name: MainEntryWay
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
-  roomName: Entry Way
+  roomName: Main Entry
   description: 'You are in a small entry way. There are three doors, each leading
     to different locations including the one you came from.  '
   floorNumber: 1
   roomImage: {fileID: -6095712193479976735, guid: d4125791d5515474cb5b59deb7151ef7, type: 3}
   props:
   - {fileID: 11400000, guid: 2aa1dea8f2e0a5b49a1d7e7875ee80aa, type: 2}
+  - {fileID: 11400000, guid: 85c21dab6ab9efd47b7a2308a3b6d7f7, type: 2}
   characters:
   - {fileID: 11400000, guid: eda3efaae189eda4a8490adc89fc64dd, type: 2}
   connections:
@@ -28,13 +29,17 @@ MonoBehaviour:
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: It is a clear glass door leading to what looks like a dinning
+    doorDescription: There is a clear glass door leading to what looks like a dinning
       area and bar.
+    displayName: Dining Area
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 7245402dffdaa0446abd954223a66f85, type: 2}
     direction: North
-    isLocked: 0
+    isLocked: 1
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: It is a clear glass door. On the other side you see a large
+    doorDescription: There is a clear glass door. On the other side you see a large
       open room with stairs and elevators. Some people are in there.
+    displayName: Large Room
+    requiredKey: {fileID: 11400000, guid: 4693ac83a7426ce488a5c90dd8c91a55, type: 2}
