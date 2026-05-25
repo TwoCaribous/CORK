@@ -47,7 +47,7 @@ public class Talk : InputAction
 
         if (found is EssentialCharacterData essential)
         {
-            DialogueEntry entry = essential.GetDialogue(controller.playerInventory);
+            DialogueEntry entry = essential.GetDialogue(controller.playerInventory, controller.gameFlags);
             if (entry != null && entry.lines != null && entry.lines.Count > 0)
             {
                 foreach (DialogueLine line in entry.lines)

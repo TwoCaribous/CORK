@@ -20,6 +20,12 @@ namespace CORK.Data.Props
         [Tooltip("Whether the player can pick up this prop and add it to their inventory.")]
         public bool canBeTaken;
 
+        [Tooltip("Printed when the player successfully takes this prop. Leave empty for the default message.")]
+        public string takeMessage;
+
+        [Tooltip("Printed when the player tries to take this prop but canBeTaken is false. Leave empty for the default message.")]
+        public string cantTakeMessage;
+
         [Tooltip("Optional sprite shown when this prop is examined. Leave empty for text-only props.")]
         public Sprite propImage;
 

@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using CORK.Data.Props;
 
 namespace CORK.Data.Rooms
 {
@@ -37,6 +38,15 @@ namespace CORK.Data.Rooms
 
         [Tooltip("A short description of the door or passage (e.g. 'a heavy oak door', 'a narrow gap in the wall').")]
         public string doorDescription;
+
+        [Tooltip("The name shown for this destination in exit listings before the player has visited it. " +
+                 "Once visited, the actual room name is shown instead. " +
+                 "Falls back to doorDescription if left empty.")]
+        public string displayName;
+
+        [Tooltip("The prop the player must use (via the 'use' command) to unlock this connection. " +
+                 "Leave empty if no key is required. The key is never consumed on use.")]
+        public PropData requiredKey;
 
         /// <summary>
         /// Convenience accessor for the connected room's name.

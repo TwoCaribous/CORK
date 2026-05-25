@@ -21,19 +21,40 @@ public class RoomNavigation : MonoBehaviour
             if (connection.isHidden || connection.connectedRoom == null)
                 continue;
 
-            string directionKey = connection.direction.ToLower();
-            string nameKey = connection.connectedRoom.roomName.ToLower();
-
-            AddToExitDictionary(directionKey, connection);
-            AddToExitDictionary(nameKey, connection);
-
-            if (!string.IsNullOrEmpty(connection.doorDescription))
+            if (connection.hasBeenVisited)
             {
-                string exitLine = connection.hasBeenVisited
-                    ? "To the " + connection.direction + " (" + connection.connectedRoom.roomName + "), " + connection.doorDescription
-                    : "To the " + connection.direction + ", " + connection.doorDescription;
-                controller.interactionDescriptionsInRoom.Add(exitLine);
+                AddToExitDictionary(connection.connectedRoom.roomName.ToLower(), connection);
             }
+            else
+            {
+                // Use displayName as the navigation key pre-visit; fall back to roomName if none is set.
+                string preVisitKey = !string.IsNullOrEmpty(connection.displayName)
+                    ? connection.displayName.ToLower()
+                    : connection.connectedRoom.roomName.ToLower();
+                AddToExitDictionary(preVisitKey, connection);
+            }
+
+            string exitLine;
+            if (connection.hasBeenVisited)
+            {
+                exitLine = "To the " + connection.direction;
+                string segment = "(" + connection.connectedRoom.roomName + ") ";
+                if (!string.IsNullOrEmpty(connection.doorDescription))
+                    segment += connection.doorDescription;
+                exitLine += ", " + segment.TrimEnd();
+            }
+            else
+            {
+                exitLine = "To the " + connection.direction;
+                string segment = "";
+                if (!string.IsNullOrEmpty(connection.displayName))
+                    segment += "(" + connection.displayName + ") ";
+                if (!string.IsNullOrEmpty(connection.doorDescription))
+                    segment += connection.doorDescription;
+                if (!string.IsNullOrEmpty(segment))
+                    exitLine += ", " + segment.TrimEnd();
+            }
+            controller.interactionDescriptionsInRoom.Add(exitLine);
         }
     }
 
@@ -50,7 +71,7 @@ public class RoomNavigation : MonoBehaviour
 
         List<RoomConnection> candidates = exitDictionary.ContainsKey(key)
             ? exitDictionary[key]
-            : FindConnectionsByKeyword(key);
+            : new List<RoomConnection>();
 
         if (candidates.Count == 0)
         {
@@ -62,8 +83,8 @@ public class RoomNavigation : MonoBehaviour
         {
             string options = "";
             foreach (RoomConnection match in candidates)
-                options += "\n  " + match.direction + " - " + match.doorDescription;
-            controller.LogStringWithReturn("That could describe several exits:" + options + "\nTry a more specific description.");
+                options += "\n  " + match.direction;
+            controller.LogStringWithReturn("Multiple exits match \"" + noun + "\":" + options + "\nTry using the direction instead.");
             return;
         }
 
@@ -84,22 +105,26 @@ public class RoomNavigation : MonoBehaviour
         controller.DisplayRoomText();
     }
 
-    List<RoomConnection> FindConnectionsByKeyword(string input)
-    {
-        List<RoomConnection> matches = new List<RoomConnection>();
-        foreach (RoomConnection connection in currentRoom.connections)
-        {
-            if (connection.isHidden || connection.connectedRoom == null) continue;
-            if (string.IsNullOrEmpty(connection.doorDescription)) continue;
-
-            if (connection.doorDescription.IndexOf(input, System.StringComparison.OrdinalIgnoreCase) >= 0)
-                matches.Add(connection);
-        }
-        return matches;
-    }
-
     public void ClearExits()
     {
         exitDictionary.Clear();
+    }
+
+    /// <summary>
+    /// Finds a connection in the current room by direction, displayName, roomName, or doorDescription.
+    /// Hidden connections are excluded. Returns null if nothing matches.
+    /// </summary>
+    public RoomConnection FindConnectionByName(string name)
+    {
+        if (string.IsNullOrEmpty(name)) return null;
+        foreach (RoomConnection conn in currentRoom.connections)
+        {
+            if (conn == null || conn.connectedRoom == null || conn.isHidden) continue;
+            if (string.Equals(conn.direction, name, System.StringComparison.OrdinalIgnoreCase)) return conn;
+            if (!string.IsNullOrEmpty(conn.displayName) && string.Equals(conn.displayName, name, System.StringComparison.OrdinalIgnoreCase)) return conn;
+            if (string.Equals(conn.connectedRoom.roomName, name, System.StringComparison.OrdinalIgnoreCase)) return conn;
+            if (!string.IsNullOrEmpty(conn.doorDescription) && conn.doorDescription.IndexOf(name, System.StringComparison.OrdinalIgnoreCase) >= 0) return conn;
+        }
+        return null;
     }
 }

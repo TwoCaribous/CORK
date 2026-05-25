@@ -14,7 +14,7 @@ public class Inspect : InputAction
         }
 
         string input = string.Join(" ", separatedInputWords, 1, separatedInputWords.Length - 1);
-        List<PropData> props = controller.roomNavigation.currentRoom.props;
+        List<PropData> props = GetAccessibleProps(controller.roomNavigation.currentRoom.props);
 
         PropData found = null;
         foreach (PropData prop in props)
@@ -44,7 +44,25 @@ public class Inspect : InputAction
         bool newDiscovery = !found.hasBeenDiscovered;
         found.hasBeenDiscovered = true;
 
+        controller.ShowPropImage(found.propImage);
         controller.LogStringWithReturn(found.description);
+
+        if (found is PropContainerData container)
+        {
+            if (container.isLocked)
+                controller.LogStringWithReturn("It is locked.");
+            else if (!container.isOpen)
+                controller.LogStringWithReturn("It is closed. (Try: open " + container.propName.ToLower() + ")");
+            else if (container.containedProps == null || container.containedProps.Count == 0)
+                controller.LogStringWithReturn("It is open and empty.");
+            else
+            {
+                string contentList = "It is open. Inside:";
+                foreach (PropData prop in container.containedProps)
+                    if (prop != null) contentList += "\n  - " + prop.propName;
+                controller.LogStringWithReturn(contentList);
+            }
+        }
 
         if (newDiscovery)
             controller.LogStringWithReturn("You'll remember this as: " + found.propName + ".");
@@ -63,5 +81,23 @@ public class Inspect : InputAction
         }
 
         return matches;
+    }
+
+    // Returns all props the player can currently interact with:
+    // room-level props plus the contents of any open containers.
+    static List<PropData> GetAccessibleProps(List<PropData> roomProps)
+    {
+        List<PropData> accessible = new List<PropData>(roomProps);
+
+        foreach (PropData prop in roomProps)
+        {
+            if (prop is PropContainerData container && container.isOpen && container.containedProps != null)
+            {
+                foreach (PropData contained in container.containedProps)
+                    if (contained != null) accessible.Add(contained);
+            }
+        }
+
+        return accessible;
     }
 }

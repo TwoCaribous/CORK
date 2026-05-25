@@ -20,4 +20,12 @@ MonoBehaviour:
   roomImage: {fileID: 0}
   props: []
   characters: []
-  connections: []
+  connections:
+  - connectedRoom: {fileID: 11400000, guid: cc03f6f00a5ae7a45b4fbf1c9e129560, type: 2}
+    direction: West
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: There is a door leading to the hallway
+    displayName: Hallway

@@ -14,23 +14,31 @@ public class Move : InputAction
 
 foreach (RoomConnection conn in connections)
 {
-    if (!conn.isHidden && conn.connectedRoom != null && !string.IsNullOrEmpty(conn.doorDescription))
+    if (!conn.isHidden && conn.connectedRoom != null)
     {
         bool isUp = string.Equals(conn.direction?.Trim(), "up", System.StringComparison.OrdinalIgnoreCase);
 
         string line;
 
-        if (isUp)
+        if (conn.hasBeenVisited)
         {
-            line = conn.hasBeenVisited
-                ? "Above you (" + conn.connectedRoom.roomName + "), " + conn.doorDescription
-                : "Above you, " + conn.doorDescription;
+            string prefix = isUp ? "Above you" : "To the " + conn.direction;
+            string segment = "(" + conn.connectedRoom.roomName + ") ";
+            if (!string.IsNullOrEmpty(conn.doorDescription))
+                segment += conn.doorDescription;
+            line = prefix + ", " + segment.TrimEnd();
         }
         else
         {
-            line = conn.hasBeenVisited
-                ? "To the " + conn.direction + " (" + conn.connectedRoom.roomName + "), " + conn.doorDescription
-                : "To the " + conn.direction + ", " + conn.doorDescription;
+            string prefix = isUp ? "Above you" : "To the " + conn.direction;
+            string segment = "";
+            if (!string.IsNullOrEmpty(conn.displayName))
+                segment += "(" + conn.displayName + ") ";
+            if (!string.IsNullOrEmpty(conn.doorDescription))
+                segment += conn.doorDescription;
+            line = prefix;
+            if (!string.IsNullOrEmpty(segment))
+                line += ", " + segment.TrimEnd();
         }
 
         exitLines.Add(line);

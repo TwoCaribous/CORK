@@ -19,6 +19,12 @@ namespace CORK.Data.Dialogue
 
         /// <summary>Passes when the player does NOT have a specific prop in their inventory.</summary>
         DoesNotHaveItem,
+
+        /// <summary>Passes when a named world flag is active (set via GameFlags.SetFlag).</summary>
+        HasFlag,
+
+        /// <summary>Passes when a named world flag is NOT active.</summary>
+        DoesNotHaveFlag,
     }
 
     /// <summary>
@@ -36,18 +42,15 @@ namespace CORK.Data.Dialogue
                  "Only used when conditionType is HasItem or DoesNotHaveItem.")]
         public PropData requiredProp;
 
-        // ── Future expansion stubs ───────────────────────────────────────────────
-        // When quest flags or visited-room tracking are implemented, add fields here:
-        //
-        // public string requiredQuestFlag;     // e.g. "metBartender"
-        // public RoomData requiredVisitedRoom;
-        // ────────────────────────────────────────────────────────────────────────
+        [Tooltip("The flag name to check against GameFlags. " +
+                 "Only used when conditionType is HasFlag or DoesNotHaveFlag.")]
+        public string requiredFlag;
 
         /// <summary>
-        /// Evaluates this condition against the player's current inventory.
-        /// A null inventory is treated as empty.
+        /// Evaluates this condition against the player's current inventory and world flags.
+        /// Null inventory is treated as empty; null flags are treated as no flags set.
         /// </summary>
-        public bool Evaluate(PlayerInventoryData inventory)
+        public bool Evaluate(PlayerInventoryData inventory, CORK.Data.GameFlags flags = null)
         {
             switch (conditionType)
             {
@@ -59,6 +62,12 @@ namespace CORK.Data.Dialogue
 
                 case DialogueConditionType.DoesNotHaveItem:
                     return inventory == null || !inventory.HasItem(requiredProp);
+
+                case DialogueConditionType.HasFlag:
+                    return flags != null && flags.HasFlag(requiredFlag);
+
+                case DialogueConditionType.DoesNotHaveFlag:
+                    return flags == null || !flags.HasFlag(requiredFlag);
 
                 default:
                     return false;

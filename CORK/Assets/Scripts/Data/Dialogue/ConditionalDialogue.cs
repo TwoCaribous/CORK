@@ -26,9 +26,9 @@ namespace CORK.Data.Dialogue
         /// Convenience wrapper — evaluates the condition and returns whether
         /// this entry's dialogue should be used.
         /// </summary>
-        public bool ConditionPasses(PlayerInventoryData inventory)
+        public bool ConditionPasses(PlayerInventoryData inventory, CORK.Data.GameFlags flags = null)
         {
-            return condition != null && condition.Evaluate(inventory);
+            return condition != null && condition.Evaluate(inventory, flags);
         }
     }
 }

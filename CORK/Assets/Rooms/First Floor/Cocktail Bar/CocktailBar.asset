@@ -26,7 +26,9 @@ MonoBehaviour:
   - connectedRoom: {fileID: 11400000, guid: 49728963a222ef646bcba03ff23683b8, type: 2}
     direction: North
     isLocked: 0
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: It is a clear glass door, on the other side you see the entry
       way to the Catalyst Building.
+    displayName: Entryway

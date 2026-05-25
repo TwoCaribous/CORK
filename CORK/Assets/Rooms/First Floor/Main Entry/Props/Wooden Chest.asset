@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ad6afad8740d549a5ddc72dddc2ad6, type: 3}
+  m_Name: Wooden Chest
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropContainerData
+  propName: Wooden Chest
+  description: 'There is a wooden chest, pushed up against the east wall. '
+  canBeTaken: 0
+  takeMessage: 
+  cantTakeMessage: It is too heavy. It must be made of sturdy wood
+  propImage: {fileID: 0}
+  hasBeenDiscovered: 0
+  isOpen: 0
+  isLocked: 0
+  lockedMessage: 
+  containedProps:
+  - {fileID: 11400000, guid: 4693ac83a7426ce488a5c90dd8c91a55, type: 2}
+  - {fileID: 11400000, guid: f4f85eef7a7ad514485c21a535170ec6, type: 2}
+  - {fileID: 11400000, guid: eadc28fa3e6ea7843bda14e4622d9596, type: 2}
+  requiredKey: {fileID: 0}
