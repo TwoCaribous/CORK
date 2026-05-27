@@ -23,42 +23,63 @@ MonoBehaviour:
   - connectedRoom: {fileID: 11400000, guid: c788f5ff1951908489d34a630b8b3b56, type: 2}
     direction: west
     isLocked: 0
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: 'The hallway ends into a larger communal area. '
+    displayName: 
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: e411a92a9a9fbfe4087327e7ed159891, type: 2}
     direction: east
     isLocked: 0
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: 'The hallway ends into a communal area. '
+    displayName: 
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 4f115b6cee240594782b7c8f9a555a09, type: 2}
     direction: south
     isLocked: 1
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: A normal sized classroom door
+    displayName: 
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: ec849e607dfc41d46ab39d9c718e8085, type: 2}
     direction: south
     isLocked: 1
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: A normal sized classroom door
+    displayName: 
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: df2241b9751aea745a46f5c63c7d26e3, type: 2}
     direction: south
     isLocked: 1
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: A normal sized classroom door
+    displayName: 
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: c4390dbbec301134f85a86a2e0207eb0, type: 2}
     direction: south
     isLocked: 0
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: A normal sized classroom door
+    displayName: 
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: a5071b463cb21344da3909e32e2c1bdd, type: 2}
     direction: south
-    isLocked: 0
+    isLocked: 1
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: A normal sized classroom door
+    displayName: 
+    requiredKey: {fileID: 0}
