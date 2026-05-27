@@ -15,6 +15,13 @@ public class TextInput : MonoBehaviour
         inputField.onEndEdit.AddListener(AcceptStringInput);
     }
 
+    void Start()
+    {
+        inputField.text = null;
+        inputField.Select();
+        inputField.ActivateInputField();
+    }
+
     void AcceptStringInput(string userInput)
     {
         userInput = userInput.ToLower();

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Dialogue.DialogueEntry
   lines:
   - speakerName: Henry
-    text: They call me Hacking Henry. They don't say that lightly though. I can hack
-      into anything. But I'll only red hat with a few drinks in me...
+    text: '"They call me Hacking Henry. They don''t say that lightly though. I can
+      hack into anything. But I''ll only red hat with a few drinks in me..."'
   - speakerName: Henry
-    text: I could even hack canvas... But I cant see why anyone would want me to
-      do that.
+    text: '"I could even hack canvas... But I cant see why anyone would want me to
+      do that."'

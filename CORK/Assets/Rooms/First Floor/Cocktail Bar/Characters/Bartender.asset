@@ -20,4 +20,4 @@ MonoBehaviour:
   hasBeenMet: 0
   ambientLines:
   - speakerName: Bartender
-    text: What'll you have?
+    text: '"What''ll you have?"'

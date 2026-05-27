@@ -20,6 +20,6 @@ MonoBehaviour:
   hasBeenMet: 0
   ambientLines:
   - speakerName: Sam
-    text: I don't like CS students... Dont talk to me
+    text: '"I don''t like CS students... Dont talk to me"'
   - speakerName: Sam
-    text: You better order and get outta here... Otherwise I'm gonna get angry
+    text: '"You better order and get outta here... Otherwise I''m gonna get angry"'
