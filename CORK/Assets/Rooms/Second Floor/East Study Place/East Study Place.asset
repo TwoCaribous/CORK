@@ -31,7 +31,7 @@ MonoBehaviour:
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: a5071b463cb21344da3909e32e2c1bdd, type: 2}
     direction: south
-    isLocked: 1
+    isLocked: 0
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: fdf3fe4ad05e39e4586b818b7e5e4a52, type: 2}
     direction: north
-    isLocked: 1
+    isLocked: 0
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0

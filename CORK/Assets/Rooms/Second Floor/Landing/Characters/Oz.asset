@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Oz
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.RandomCharacterData
   characterName: Oz
-  description: 'A guy working on his laptop at the back left of the space. He seems
-    to be listening to Black Sabbath with his cheap earphones. '
+  description: 'You see s guy working on his laptop at the back left of the space.
+    He seems to be listening to Black Sabbath with his cheap earphones. '
   characterType: 1
   portrait: {fileID: 0}
   hasBeenMet: 0
   ambientLines:
   - speakerName: Oz
-    text: The seven hundreth unicorn is waiting in the sky.
+    text: '"The seven hundreth unicorn is waiting in the sky."'
   - speakerName: Oz
-    text: A symptom of the universe, A love that never dies!
+    text: '"A symptom of the universe, A love that never dies!"'

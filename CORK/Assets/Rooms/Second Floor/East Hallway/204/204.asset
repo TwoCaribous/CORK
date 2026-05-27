@@ -27,5 +27,5 @@ MonoBehaviour:
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: A normal sized classroom door
-    displayName: Door
+    displayName: East Hallway
     requiredKey: {fileID: 0}

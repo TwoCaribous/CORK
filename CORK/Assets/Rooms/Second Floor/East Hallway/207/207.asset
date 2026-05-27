@@ -26,7 +26,7 @@ MonoBehaviour:
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: A normal looking classroom door.
-    displayName: Door
+    displayName: East Hallway
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: e411a92a9a9fbfe4087327e7ed159891, type: 2}
     direction: south
@@ -35,5 +35,5 @@ MonoBehaviour:
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: A normal looking classroom door.
-    displayName: Door
+    displayName: East Study Place
     requiredKey: {fileID: 0}
