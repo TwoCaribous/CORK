@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class TextInput : MonoBehaviour
 {
@@ -24,6 +25,18 @@ public class TextInput : MonoBehaviour
 
     void AcceptStringInput(string userInput)
     {
+        // Only accept input when Enter is pressed. Ignore mouse clicks or other triggers.
+        if (Keyboard.current == null || !Keyboard.current.enterKey.wasPressedThisFrame)
+        {
+            return;
+        }
+
+        // Prevent empty input submissions.
+        if (string.IsNullOrWhiteSpace(userInput))
+        {
+            return;
+        }
+
         userInput = userInput.ToLower();
         string coloredInput = "<color=#00ff00>" + userInput + "</color>";
 

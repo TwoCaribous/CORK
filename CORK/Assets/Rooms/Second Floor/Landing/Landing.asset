@@ -40,3 +40,12 @@ MonoBehaviour:
     doorDescription: A shorter hallway to the west.
     displayName: West Hallway
     requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 7245402dffdaa0446abd954223a66f85, type: 2}
+    direction: 
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'Back down the black staircase. '
+    displayName: Downstairs
+    requiredKey: {fileID: 0}
