@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
   propName: Second Floor Map
   description: 'A small lectern with a map of the second floor on it. '
-  canBeTaken: 1
+  canBeTaken: 0
+  takeMessage: 
+  cantTakeMessage: 'It''s too big to carry. '
   propImage: {fileID: 0}
+  hasBeenDiscovered: 0

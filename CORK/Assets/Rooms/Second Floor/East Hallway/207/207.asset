@@ -18,4 +18,22 @@ MonoBehaviour:
   roomImage: {fileID: 0}
   props: []
   characters: []
-  connections: []
+  connections:
+  - connectedRoom: {fileID: 11400000, guid: 7319f95b6c06a644ca61315f9c6ad95d, type: 2}
+    direction: south
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: A normal looking classroom door.
+    displayName: Door
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: e411a92a9a9fbfe4087327e7ed159891, type: 2}
+    direction: south
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: A normal looking classroom door.
+    displayName: Door
+    requiredKey: {fileID: 0}

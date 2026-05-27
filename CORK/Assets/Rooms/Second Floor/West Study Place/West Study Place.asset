@@ -10,21 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
-  m_Name: 201
+  m_Name: West Study Place
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
-  roomName: 201
-  description: 
+  roomName: West Study P;ace
+  description: An open study space with chairs and tables on the left side. You see
+    students working on their laptops and reading books.
   floorNumber: 2
-  roomImage: {fileID: 0}
+  roomImage: {fileID: 1927182404146128045, guid: 13da1ae67a8c0724aad144912fb0b065, type: 3}
   props: []
   characters: []
   connections:
-  - connectedRoom: {fileID: 11400000, guid: 7319f95b6c06a644ca61315f9c6ad95d, type: 2}
-    direction: north
+  - connectedRoom: {fileID: 11400000, guid: 1ce9eb84a95884c4bb41514827f03989, type: 2}
+    direction: west
     isLocked: 0
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: A normal sized classroom door
-    displayName: East Hallway
+    doorDescription: An opening leading into the short hallway.
+    displayName: West Hallway
     requiredKey: {fileID: 0}

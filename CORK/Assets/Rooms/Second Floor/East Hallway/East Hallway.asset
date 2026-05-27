@@ -16,7 +16,7 @@ MonoBehaviour:
   description: 'You enter a long hallway with classrooms on each side. There are
     bathrooms that divide the middle of the hallway with stairs on each end. '
   floorNumber: 2
-  roomImage: {fileID: 0}
+  roomImage: {fileID: -4042725256983999864, guid: 4a3d8808863ccc74fbb12f17e07881c5, type: 3}
   props: []
   characters: []
   connections:
@@ -27,7 +27,7 @@ MonoBehaviour:
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: 'The hallway ends into a larger communal area. '
-    displayName: 
+    displayName: Landing
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: e411a92a9a9fbfe4087327e7ed159891, type: 2}
     direction: east
@@ -36,7 +36,7 @@ MonoBehaviour:
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: 'The hallway ends into a communal area. '
-    displayName: 
+    displayName: East Study Place
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 4f115b6cee240594782b7c8f9a555a09, type: 2}
     direction: south
@@ -45,7 +45,7 @@ MonoBehaviour:
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: A normal sized classroom door
-    displayName: 
+    displayName: 202
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: ec849e607dfc41d46ab39d9c718e8085, type: 2}
     direction: south
@@ -54,7 +54,7 @@ MonoBehaviour:
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: A normal sized classroom door
-    displayName: 
+    displayName: 201
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: df2241b9751aea745a46f5c63c7d26e3, type: 2}
     direction: south
@@ -62,8 +62,8 @@ MonoBehaviour:
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: A normal sized classroom door
-    displayName: 
+    doorDescription: A normal sized classroom door.
+    displayName: 203
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: c4390dbbec301134f85a86a2e0207eb0, type: 2}
     direction: south
@@ -71,8 +71,8 @@ MonoBehaviour:
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: A normal sized classroom door
-    displayName: 
+    doorDescription: A normal sized classroom door.
+    displayName: 204
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: a5071b463cb21344da3909e32e2c1bdd, type: 2}
     direction: south
@@ -81,5 +81,5 @@ MonoBehaviour:
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: A normal sized classroom door
-    displayName: 
+    displayName: 206
     requiredKey: {fileID: 0}
