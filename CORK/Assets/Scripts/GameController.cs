@@ -61,6 +61,7 @@ public class GameController : MonoBehaviour
     Dictionary<RoomData,          RoomSnapshot>      snapshotRooms       = new Dictionary<RoomData,          RoomSnapshot>();
     Dictionary<RoomConnection,    ConnectionSnapshot> snapshotConnections = new Dictionary<RoomConnection,    ConnectionSnapshot>();
     Dictionary<CharacterData,     CharacterSnapshot>  snapshotCharacters  = new Dictionary<CharacterData,     CharacterSnapshot>();
+    List<PropData> snapshotPlayerInventoryItems = new List<PropData>();
 
     void Awake()
     {
@@ -116,6 +117,9 @@ public class GameController : MonoBehaviour
                 hasBeenMet = character.hasBeenMet
             };
         }
+
+        if (playerInventory != null)
+            snapshotPlayerInventoryItems = new List<PropData>(playerInventory.items);
     }
 
     void Start()
@@ -168,7 +172,7 @@ public class GameController : MonoBehaviour
         {
             if (character == null) continue;
             if (character.hasBeenMet)
-                roomText += "\n\n" + IndentText(character.characterName + " - " + character.description);
+                roomText += "\n\n" + IndentText($"<color=#FFA500>{character.characterName}</color> - {character.description}");
             else if (!string.IsNullOrEmpty(character.description))
                 roomText += "\n\n" + IndentText(character.description);
         }
@@ -348,7 +352,7 @@ public class GameController : MonoBehaviour
             kvp.Key.hasBeenMet = kvp.Value.hasBeenMet;
 
         if (playerInventory != null)
-            playerInventory.items.Clear();
+            playerInventory.items = new List<PropData>(snapshotPlayerInventoryItems);
 
         if (gameFlags != null)
             gameFlags.ClearAll();

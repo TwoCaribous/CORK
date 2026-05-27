@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8bdd3c1d79d6934793f96f094bf50e8, type: 3}
-  m_Name: New Prop
+  m_Name: Pencil
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
-  propName: pencil
-  description: There is a standard pencil
+  propName: Pencil
+  description: A small mechanical pencil.
   canBeTaken: 1
-  takeMessage: 
+  takeMessage: 'Y0u pick up the pencil.  '
   cantTakeMessage: 
   propImage: {fileID: 0}
   hasBeenDiscovered: 0

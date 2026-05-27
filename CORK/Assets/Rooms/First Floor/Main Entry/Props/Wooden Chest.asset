@@ -18,12 +18,11 @@ MonoBehaviour:
   takeMessage: 
   cantTakeMessage: It is too heavy. It must be made of sturdy wood
   propImage: {fileID: 0}
-  hasBeenDiscovered: 0
+  hasBeenDiscovered: 1
   isOpen: 0
   isLocked: 0
   lockedMessage: 
   containedProps:
-  - {fileID: 11400000, guid: 4693ac83a7426ce488a5c90dd8c91a55, type: 2}
   - {fileID: 11400000, guid: f4f85eef7a7ad514485c21a535170ec6, type: 2}
   - {fileID: 11400000, guid: eadc28fa3e6ea7843bda14e4622d9596, type: 2}
   requiredKey: {fileID: 0}

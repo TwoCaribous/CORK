@@ -16,7 +16,7 @@ MonoBehaviour:
   description: A small red card with a picture of your face on it, proving you are
     a student at EWU.
   canBeTaken: 1
-  takeMessage: 
+  takeMessage: Your Eagle Card has been retrieved.
   cantTakeMessage: 
   propImage: {fileID: 0}
   hasBeenDiscovered: 0
