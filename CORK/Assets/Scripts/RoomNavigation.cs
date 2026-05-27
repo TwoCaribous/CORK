@@ -101,7 +101,8 @@ public class RoomNavigation : MonoBehaviour
 
         connection.hasBeenVisited = true;
         currentRoom = connection.connectedRoom;
-        controller.LogStringWithReturn("You head to " + currentRoom.roomName + ".");
+        controller.LogStringWithReturn("<color=#FFD700>You head to " + currentRoom.roomName + ".</color>");
+        controller.LogRawStringWithReturn("");
         controller.DisplayRoomText();
     }
 

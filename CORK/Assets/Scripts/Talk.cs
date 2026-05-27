@@ -50,8 +50,8 @@ public class Talk : InputAction
             DialogueEntry entry = essential.GetDialogue(controller.playerInventory, controller.gameFlags);
             if (entry != null && entry.lines != null && entry.lines.Count > 0)
             {
-                foreach (DialogueLine line in entry.lines)
-                    controller.LogStringWithReturn(line.speakerName + ": " + line.text);
+                string dialogueText = string.Join("\n", entry.lines.ConvertAll(line => line.speakerName + ": " + line.text).ToArray());
+                controller.LogStringWithReturn(dialogueText);
             }
             else
             {
@@ -72,7 +72,10 @@ public class Talk : InputAction
         }
 
         if (newMeeting)
+        {
+            controller.LogRawStringWithReturn("");
             controller.LogStringWithReturn("You learn their name is: " + found.characterName + ".");
+        }
     }
 
     static List<CharacterData> FindCharactersByDescription(List<CharacterData> characters, string input)

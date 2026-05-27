@@ -25,7 +25,11 @@ public class TextInput : MonoBehaviour
     void AcceptStringInput(string userInput)
     {
         userInput = userInput.ToLower();
-        controller.LogStringWithReturn(userInput);
+        string coloredInput = "<color=#00ff00>" + userInput + "</color>";
+
+        controller.LogRawStringWithReturn("");
+        controller.LogRawStringWithReturn(coloredInput);
+        controller.LogRawStringWithReturn("");
 
         char[] delimiterCharacters = { ' ' };
         string[] separatedInputWords = userInput.Split(delimiterCharacters);

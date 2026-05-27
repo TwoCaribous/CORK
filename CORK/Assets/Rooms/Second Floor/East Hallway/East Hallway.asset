@@ -83,3 +83,48 @@ MonoBehaviour:
     doorDescription: A normal sized classroom door
     displayName: 206
     requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: fdf3fe4ad05e39e4586b818b7e5e4a52, type: 2}
+    direction: north
+    isLocked: 1
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: A normal sized classroom door
+    displayName: 207
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 161a2fd953c84774ba9b29d0e5e2e7bd, type: 2}
+    direction: north
+    isLocked: 1
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: A normal sized classroom door
+    displayName: 208
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 136ac356cb5aaf2498eb77e9125341eb, type: 2}
+    direction: north
+    isLocked: 1
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: A normal sized classroom door
+    displayName: 210
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 01bf0c5a9899e3548adeb1f3b39fc957, type: 2}
+    direction: north
+    isLocked: 1
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: A normal sized classroom door
+    displayName: 211
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: c183acdf712102c40ae38afd75f79be0, type: 2}
+    direction: north
+    isLocked: 1
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: A normal sized classroom door
+    displayName: 212
+    requiredKey: {fileID: 0}

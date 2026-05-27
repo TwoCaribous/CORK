@@ -162,7 +162,7 @@ public class GameController : MonoBehaviour
         UpdateRoomImage();
         UnpackRoom();
 
-        string roomText = FormatRoomName(roomNavigation.currentRoom.roomName) + "\n\n" + IndentText(roomNavigation.currentRoom.description);
+        string roomText = FormatRoomName(roomNavigation.currentRoom.roomName) + "\n" + IndentText(roomNavigation.currentRoom.description);
 
         foreach (CharacterData character in roomNavigation.currentRoom.characters)
         {
@@ -176,7 +176,7 @@ public class GameController : MonoBehaviour
         if (interactionDescriptionsInRoom.Count > 0)
             roomText += "\n\n" + string.Join("\n\n", interactionDescriptionsInRoom.ConvertAll(s => IndentText(s)).ToArray());
 
-        LogStringWithReturn(roomText);
+        LogRawStringWithReturn(roomText);
     }
 
     string FormatRoomName(string roomName)
@@ -294,7 +294,12 @@ public class GameController : MonoBehaviour
 
     public void LogStringWithReturn(string stringToAdd)
     {
-        actionLog.Add(stringToAdd + "\n");
+        actionLog.Add(IndentText(stringToAdd));
+    }
+
+    public void LogRawStringWithReturn(string stringToAdd)
+    {
+        actionLog.Add(stringToAdd);
     }
 
     public bool TryTakeFromRoom(PropData prop)
