@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
+  m_Name: West Hallway
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
+  roomName: West Hallway
+  description: You enter a hallway with classrooms on each side. There is a study
+    space at the end, with a lounge connected to it.
+  floorNumber: 3
+  roomImage: {fileID: -278597620924376397, guid: ddb41fc878b26b2489c9366a1261bbe4, type: 3}
+  props: []
+  characters: []
+  connections:
+  - connectedRoom: {fileID: 11400000, guid: 0cc4124cc93c4f0498a41c02cf4ca603, type: 2}
+    direction: east
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'The hallway ends into a student lounge. '
+    displayName: Student Lounge
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 81849af2813b1404fa9d21e698fc1382, type: 2}
+    direction: south
+    isLocked: 1
+    lockedMessage: The door is locked.
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'A normal looking classroom door. '
+    displayName: 301
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 99ab7cb25e85f22418fe2c83b0ede226, type: 2}
+    direction: south
+    isLocked: 1
+    lockedMessage: The door is locked.
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'A normal looking classroom door. '
+    displayName: 302
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 0a650ab4468372447ad3b10a5bb53fb1, type: 2}
+    direction: south
+    isLocked: 1
+    lockedMessage: The door is locked.
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'A normal looking classroom door. '
+    displayName: 303
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: f87c7c5e3ed27c74182ebecea2f70a28, type: 2}
+    direction: south
+    isLocked: 1
+    lockedMessage: The door is locked.
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'A normal looking classroom door. '
+    displayName: 304
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: b6cb5615b5351b04f95f2c2efaf83e9f, type: 2}
+    direction: west
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: At the other end of the hallway is a study space.
+    displayName: West Study Space
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 0cc4124cc93c4f0498a41c02cf4ca603, type: 2}
+    direction: west
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'At the other end of the hallway is a student lounge. '
+    displayName: Student Lounge
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 58406c1f84d980e4e87066d593c17496, type: 2}
+    direction: north
+    isLocked: 1
+    lockedMessage: The door is locked.
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: The door to the Regional Planning Room.
+    displayName: Regional Planning Room
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 5f9020f962dc03f4287725661c16c612, type: 2}
+    direction: north
+    isLocked: 1
+    lockedMessage: The door is locked.
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'A normal looking classroom door. '
+    displayName: 307
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 7fe3258eed4c4ad4998fe1ced9a4041a, type: 2}
+    direction: north
+    isLocked: 1
+    lockedMessage: The door is locked.
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: A normal looking classroom door.
+    displayName: 308
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 23400dbfb33d67449b344dfa624e8988, type: 2}
+    direction: north
+    isLocked: 1
+    lockedMessage: The door is locked.
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: A normal looking classroom door.
+    displayName: 309
+    requiredKey: {fileID: 0}
