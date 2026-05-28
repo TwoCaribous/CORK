@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Dialogue.DialogueEntry
   lines:
   - speakerName: Security Sam
-    text: Go on right through! Have a nice time in class
+    text: '"Go on right through! Have a nice time in class."'

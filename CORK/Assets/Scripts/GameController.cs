@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 using CORK.Data;
@@ -60,6 +61,7 @@ public class GameController : MonoBehaviour
     Dictionary<RoomData,          RoomSnapshot>      snapshotRooms       = new Dictionary<RoomData,          RoomSnapshot>();
     Dictionary<RoomConnection,    ConnectionSnapshot> snapshotConnections = new Dictionary<RoomConnection,    ConnectionSnapshot>();
     Dictionary<CharacterData,     CharacterSnapshot>  snapshotCharacters  = new Dictionary<CharacterData,     CharacterSnapshot>();
+    List<PropData> snapshotPlayerInventoryItems = new List<PropData>();
 
     void Awake()
     {
@@ -115,10 +117,15 @@ public class GameController : MonoBehaviour
                 hasBeenMet = character.hasBeenMet
             };
         }
+
+        if (playerInventory != null)
+            snapshotPlayerInventoryItems = new List<PropData>(playerInventory.items);
     }
 
     void Start()
     {
+        if (displayText != null)
+            displayText.supportRichText = true;
         LogStringWithReturn(GetCommandHelp());
         DisplayRoomText();
         DisplayLoggedText();
@@ -159,21 +166,87 @@ public class GameController : MonoBehaviour
         UpdateRoomImage();
         UnpackRoom();
 
-        string roomText = roomNavigation.currentRoom.roomName + "\n" + roomNavigation.currentRoom.description;
+        string roomText = FormatRoomName(roomNavigation.currentRoom.roomName) + "\n" + IndentText(roomNavigation.currentRoom.description);
 
         foreach (CharacterData character in roomNavigation.currentRoom.characters)
         {
             if (character == null) continue;
             if (character.hasBeenMet)
-                roomText += "\n" + character.characterName + " - " + character.description;
+                roomText += "\n\n" + IndentText($"<color=#FFA500>{character.characterName}</color> - {character.description}");
             else if (!string.IsNullOrEmpty(character.description))
-                roomText += "\n" + character.description;
+                roomText += "\n\n" + IndentText(character.description);
         }
 
         if (interactionDescriptionsInRoom.Count > 0)
-            roomText += "\n" + string.Join("\n", interactionDescriptionsInRoom.ToArray());
+            roomText += "\n\n" + string.Join("\n\n", interactionDescriptionsInRoom.ConvertAll(s => IndentText(s)).ToArray());
 
-        LogStringWithReturn(roomText);
+        LogRawStringWithReturn(roomText);
+    }
+
+    string FormatRoomName(string roomName)
+    {
+        int underlineLength = Mathf.Max(roomName.Length + 6, 16);
+        return roomName + "\n" + new string('-', underlineLength);
+    }
+
+    string IndentText(string text, int depth = 1)
+    {
+        string indent = new string(' ', 4 * depth);
+        if (displayText == null)
+            return indent + text.Replace("\n", "\n" + indent);
+
+        float availableWidth = Mathf.Max(displayText.GetPixelAdjustedRect().width, displayText.rectTransform.rect.width) - 12f;
+        if (availableWidth <= 0f)
+            return indent + text.Replace("\n", "\n" + indent);
+
+        return WrapText(text, availableWidth, indent);
+    }
+
+    string WrapText(string text, float lineWidth, string indent)
+    {
+        TextGenerationSettings settings = displayText.GetGenerationSettings(new Vector2(lineWidth, 0f));
+        TextGenerator generator = displayText.cachedTextGeneratorForLayout;
+        StringBuilder formatted = new StringBuilder();
+
+        string[] paragraphs = text.Split('\n');
+        for (int p = 0; p < paragraphs.Length; p++)
+        {
+            if (p > 0)
+                formatted.Append('\n');
+
+            string paragraph = paragraphs[p].Trim();
+            if (paragraph.Length == 0)
+            {
+                formatted.Append(indent);
+                continue;
+            }
+
+            string line = indent;
+            string[] words = paragraph.Split(' ');
+            for (int i = 0; i < words.Length; i++)
+            {
+                string word = words[i];
+                if (string.IsNullOrEmpty(word))
+                    continue;
+
+                string candidate = line == indent ? line + word : line + " " + word;
+                float candidateWidth = generator.GetPreferredWidth(candidate, settings);
+
+                if (candidateWidth > lineWidth && line != indent)
+                {
+                    formatted.AppendLine(line);
+                    line = indent + word;
+                }
+                else
+                {
+                    line = candidate;
+                }
+            }
+
+            formatted.Append(line);
+        }
+
+        return formatted.ToString();
     }
 
     public void UpdateRoomImage()
@@ -225,7 +298,12 @@ public class GameController : MonoBehaviour
 
     public void LogStringWithReturn(string stringToAdd)
     {
-        actionLog.Add(stringToAdd + "\n");
+        actionLog.Add(IndentText(stringToAdd));
+    }
+
+    public void LogRawStringWithReturn(string stringToAdd)
+    {
+        actionLog.Add(stringToAdd);
     }
 
     public bool TryTakeFromRoom(PropData prop)
@@ -274,7 +352,7 @@ public class GameController : MonoBehaviour
             kvp.Key.hasBeenMet = kvp.Value.hasBeenMet;
 
         if (playerInventory != null)
-            playerInventory.items.Clear();
+            playerInventory.items = new List<PropData>(snapshotPlayerInventoryItems);
 
         if (gameFlags != null)
             gameFlags.ClearAll();

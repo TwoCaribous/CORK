@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
   roomName: 203
   description: 
-  floorNumber: 0
+  floorNumber: 2
   roomImage: {fileID: 0}
   props: []
   characters: []

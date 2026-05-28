@@ -17,7 +17,8 @@ MonoBehaviour:
     wall
   characterType: 0
   portrait: {fileID: 0}
+  hasBeenMet: 0
   ambientLines:
   - speakerName: Really Super Cool Guy
-    text: Only chumps get to class on time. I always show up 5 minutes late... To
-      esablish my dominance
+    text: '"Only chumps get to class on time. I always show up 5 minutes late...
+      To esablish my dominance."'

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Dialogue.DialogueEntry
   lines:
   - speakerName: Security Sam
-    text: Gonna need an Eagle Card if you want to get in.
+    text: '"Gonna need an Eagle Card if you want to get in."'

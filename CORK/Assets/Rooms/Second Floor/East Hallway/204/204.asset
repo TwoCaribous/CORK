@@ -12,10 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
   m_Name: 204
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
-  roomName: 205
-  description: 
-  floorNumber: 0
+  roomName: 204
+  description: 'A small engineering lab. you can see computers on tables, and students
+    in the back working hard. '
+  floorNumber: 2
   roomImage: {fileID: 0}
   props: []
   characters: []
-  connections: []
+  connections:
+  - connectedRoom: {fileID: 11400000, guid: 7319f95b6c06a644ca61315f9c6ad95d, type: 2}
+    direction: north
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: A normal sized classroom door
+    displayName: East Hallway
+    requiredKey: {fileID: 0}

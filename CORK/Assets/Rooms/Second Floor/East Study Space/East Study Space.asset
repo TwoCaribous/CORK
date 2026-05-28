@@ -10,30 +10,40 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
-  m_Name: East Study Place
+  m_Name: East Study Space
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
-  roomName: 
-  description: 
-  floorNumber: 0
-  roomImage: {fileID: 0}
+  roomName: East Study Place
+  description: 'An open study space with chairs and tables on both sides. You see
+    students working on their laptops and reading books. '
+  floorNumber: 2
+  roomImage: {fileID: -6571243156655046596, guid: f71ba0fd1208eb64f9eb1ff4ffaf2e3f, type: 3}
   props: []
   characters: []
   connections:
   - connectedRoom: {fileID: 11400000, guid: 7319f95b6c06a644ca61315f9c6ad95d, type: 2}
     direction: west
     isLocked: 0
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: The room connects to the eastern hallway
+    displayName: East Hallway
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: a5071b463cb21344da3909e32e2c1bdd, type: 2}
     direction: south
     isLocked: 0
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: A normal sized classroom door
+    doorDescription: A normal sized classroom door.
+    displayName: 206
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: fdf3fe4ad05e39e4586b818b7e5e4a52, type: 2}
     direction: north
     isLocked: 0
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: A normal sized classroom door
+    doorDescription: A normal sized classroom door.
+    displayName: 207
+    requiredKey: {fileID: 0}

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: MainEntryWay
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
   roomName: Main Entry
-  description: 'You are in a small entry way. There are three doors, each leading
-    to different locations including the one you came from.  '
+  description: 'You are in a small entry way, with doors to your left and right.  '
   floorNumber: 1
   roomImage: {fileID: -6095712193479976735, guid: d4125791d5515474cb5b59deb7151ef7, type: 3}
   props:
@@ -24,22 +23,21 @@ MonoBehaviour:
   - {fileID: 11400000, guid: eda3efaae189eda4a8490adc89fc64dd, type: 2}
   connections:
   - connectedRoom: {fileID: 11400000, guid: 4e8430a2d721a684a8be31d71b6ac817, type: 2}
-    direction: South
+    direction: Right
     isLocked: 0
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: There is a clear glass door leading to what looks like a dinning
-      area and bar.
-    displayName: Dining Area
+    doorDescription: There is a glass door leading to what looks like a bar.
+    displayName: Bar Door
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 7245402dffdaa0446abd954223a66f85, type: 2}
-    direction: North
+    direction: Left
     isLocked: 1
-    lockedMessage: 
+    lockedMessage: 'You need an Eagle Card to enter. '
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: There is a clear glass door. On the other side you see a large
-      open room with stairs and elevators. Some people are in there.
-    displayName: Large Room
+    doorDescription: There is a glass door. On the other side you see a large open
+      room with stairs and elevators. Some people are in there.
+    displayName: Lobby Door
     requiredKey: {fileID: 11400000, guid: 4693ac83a7426ce488a5c90dd8c91a55, type: 2}

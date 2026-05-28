@@ -17,9 +17,10 @@ MonoBehaviour:
     with papers and he is struggling to pick them all up. '
   characterType: 1
   portrait: {fileID: 0}
+  hasBeenMet: 0
   ambientLines:
   - speakerName: Andy
-    text: OOOHHHH JEEEZ!!!! I sure do hope I make it to class on time... it would
-      be a shame to miss class
+    text: '"OOOHHHH JEEEZ!!!! I sure do hope I make it to class on time... it would
+      be a shame to miss class."'
   - speakerName: Andy
-    text: 'Missing class is as bad as missing the birth of your first born child. '
+    text: '"Missing class is as bad as missing the birth of your first born child." '

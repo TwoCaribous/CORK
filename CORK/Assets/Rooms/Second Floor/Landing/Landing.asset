@@ -13,23 +13,39 @@ MonoBehaviour:
   m_Name: Landing
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
   roomName: Landing
-  description: 'You arrive on the second floor. There is a lectern nearby, along
-    with some students in the small communal area to the left. '
+  description: 'You arrive on the second floor. There is a llarge open study space
+    with students hard at work. '
   floorNumber: 2
-  roomImage: {fileID: 0}
+  roomImage: {fileID: -3625526545271013924, guid: dcca491c270a9d24fb5f3faf9ec3dabc, type: 3}
   props:
   - {fileID: 11400000, guid: bb110f760d1473541be161b1cb774364, type: 2}
-  characters: []
+  characters:
+  - {fileID: 11400000, guid: b2b67124f90484f458c3db79a0d52224, type: 2}
   connections:
   - connectedRoom: {fileID: 11400000, guid: 7319f95b6c06a644ca61315f9c6ad95d, type: 2}
     direction: east
     isLocked: 0
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: A reasonably spacious hallway to the east
+    doorDescription: A reasonably spacious hallway to the east.
+    displayName: East Hallway
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 1ce9eb84a95884c4bb41514827f03989, type: 2}
     direction: west
     isLocked: 0
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: A reasonable hallway to the west
+    doorDescription: A shorter hallway to the west.
+    displayName: West Hallway
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 7245402dffdaa0446abd954223a66f85, type: 2}
+    direction: 
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'Back down the black staircase. '
+    displayName: Downstairs
+    requiredKey: {fileID: 0}
