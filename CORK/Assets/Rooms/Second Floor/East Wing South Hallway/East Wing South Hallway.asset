@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
+  m_Name: East Wing South Hallway
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
+  roomName: East Wing South Hallway
+  description: The southern hallway opens up and you see classrooms to your right
+    and a long blank wall on your left. At the end of the hallway you see another
+    connection and a study space further beyond.
+  floorNumber: 2
+  roomImage: {fileID: 0}
+  props: []
+  characters: []
+  connections:
+  - connectedRoom: {fileID: 11400000, guid: 83aa6b041c93bc446b3a05f501c201b6, type: 2}
+    direction: West
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'The halway leads to the east connectioWn. '
+    displayName: Near Connection
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 70cbe71c19073084f9229c6631726c5d, type: 2}
+    direction: East
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'The halway leads farther down to what looks like a hallway
+      convergence before reaching the Study Space. '
+    displayName: Far Connection
+    requiredKey: {fileID: 0}

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
+  m_Name: East Wing Far Connection
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
+  roomName: East Wing Far Connection
+  description: 'You enter a smaller hallway at the East Wing''s Far end. You see
+    the north and south hallway, but also a smaller study space farther down the
+    southern hallways trajectory. '
+  floorNumber: 2
+  roomImage: {fileID: 0}
+  props: []
+  characters: []
+  connections:
+  - connectedRoom: {fileID: 11400000, guid: ac71913d1a3677d4fb49ea9c7482379a, type: 2}
+    direction: West
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'From the connection you see a hallway to the north. '
+    displayName: North Hallway
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 377b6040709ae424dbe49d1f7fe2257b, type: 2}
+    direction: West
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'From the connection you see a hallway to the south. '
+    displayName: South Hallway
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: a2b0eba620d6c1d44b123f0aafc69196, type: 2}
+    direction: East
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'From the connection it leads into a smaller study space. '
+    displayName: Study Space
+    requiredKey: {fileID: 0}

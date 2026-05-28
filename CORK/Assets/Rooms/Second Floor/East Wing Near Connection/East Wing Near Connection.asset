@@ -10,41 +10,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
-  m_Name: West Wing  Far Connection
+  m_Name: East Wing Near Connection
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
-  roomName: West Wing Far Connection
-  description: 'You are standing in a small hallway that connects both of the West
-    Wing Hallways. The Right hallway continues to the West Study Space, and you see
-    a door in the middle of the hallway divider.  '
+  roomName: East Landing Elevators
+  description: Now in the East wing, you can see a water fountain and two hallways
+    to the north and south.
   floorNumber: 2
   roomImage: {fileID: 0}
   props: []
   characters: []
   connections:
-  - connectedRoom: {fileID: 11400000, guid: cef6fde523c1ab044b1ff1643ac93393, type: 2}
+  - connectedRoom: {fileID: 11400000, guid: 8892f715e8d88564f98af853872a130f, type: 2}
     direction: West
     isLocked: 0
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: The  North Hallway continues on into the  Study Space
-    displayName: Study Space
+    doorDescription: 'The hallways lead into a larger landing space on the second
+      story. '
+    displayName: Elevators
     requiredKey: {fileID: 0}
-  - connectedRoom: {fileID: 11400000, guid: 2c6de0a1601a95c46a6d5aa6946df2b3, type: 2}
+  - connectedRoom: {fileID: 11400000, guid: 377b6040709ae424dbe49d1f7fe2257b, type: 2}
     direction: East
     isLocked: 0
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: 'A long Hallway Leading to the Landing. '
-    displayName: North Hallway
-    requiredKey: {fileID: 0}
-  - connectedRoom: {fileID: 11400000, guid: 51278795809420c4fa32e2acbe23b700, type: 2}
-    direction: East
-    isLocked: 0
-    lockedMessage: 
-    isHidden: 0
-    hasBeenVisited: 0
-    doorDescription: 'A long Hallway Leading to the Near Connection. '
+    doorDescription: The south hallway leads deeper into the east wing.
     displayName: South Hallway
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: ac71913d1a3677d4fb49ea9c7482379a, type: 2}
+    direction: East
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: The north hallway leads deeper into the east wing.
+    displayName: North Hallway
     requiredKey: {fileID: 0}

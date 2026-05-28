@@ -10,40 +10,40 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
-  m_Name: West Wing Near Connection
+  m_Name: East Wing South Hallway
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
-  roomName: West Wing Near Connection
-  description: You are standing in a small hallway with railing overlooking the First
-    Floor Main Lobby.
-  floorNumber: 2
+  roomName: East Wing South Hallway
+  description: A short office hallway with offices to the right and some shorter
+    TA offices to the left.
+  floorNumber: 3
   roomImage: {fileID: 0}
   props: []
   characters: []
   connections:
-  - connectedRoom: {fileID: 11400000, guid: c788f5ff1951908489d34a630b8b3b56, type: 2}
+  - connectedRoom: {fileID: 11400000, guid: 0df9af472b3a38745bf063668047020d, type: 2}
+    direction: West
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: The hallway leads into another connection
+    displayName: Near Connection
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 1c22aaf9537ca3044b6bd354ac162026, type: 2}
     direction: East
     isLocked: 0
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: A walkway to the second floor Landing Study Space.
-    displayName: Landing
+    doorDescription: The hallway leads into another connection.
+    displayName: Far Connection
     requiredKey: {fileID: 0}
-  - connectedRoom: {fileID: 11400000, guid: 2c6de0a1601a95c46a6d5aa6946df2b3, type: 2}
-    direction: North
-    isLocked: 0
-    lockedMessage: 
-    isHidden: 0
-    hasBeenVisited: 0
-    doorDescription: A Large doorway leading to the North Hallway.
-    displayName: North Hallway
-    requiredKey: {fileID: 0}
-  - connectedRoom: {fileID: 11400000, guid: 51278795809420c4fa32e2acbe23b700, type: 2}
+  - connectedRoom: {fileID: 11400000, guid: 49389375800f84046b79cfe76be974e6, type: 2}
     direction: South
     isLocked: 0
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: A Large doorway leading to the South Hallway.
-    displayName: South Hallway
+    doorDescription: 'The south hallway leads to room 334. Dr. Cain''s office. '
+    displayName: Cain's Office
     requiredKey: {fileID: 0}

@@ -39,5 +39,14 @@ MonoBehaviour:
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: 'A walkway to the west overlooking the Main Lobby. '
-    displayName: Downstairs
+    displayName: Near Connection
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 8892f715e8d88564f98af853872a130f, type: 2}
+    direction: East
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'The landing continues to the elevators to the south.. '
+    displayName: Elevators
     requiredKey: {fileID: 0}
