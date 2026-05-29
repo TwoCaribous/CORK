@@ -18,7 +18,7 @@ MonoBehaviour:
     Only a few look like they may be for student use. Several rooms have numbers
     written near their doors.  '
   floorNumber: 1
-  roomImage: {fileID: 0}
+  roomImage: {fileID: 3849336893165970440, guid: dcc0476259df6264781d866d10bfdb98, type: 3}
   props: []
   characters: []
   connections:
@@ -30,6 +30,7 @@ MonoBehaviour:
     hasBeenVisited: 0
     doorDescription: There is no door, you can see directly into the main lobby.
     displayName: Lobby
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: daf7754797fa55f489031ea866123c1e, type: 2}
     direction: South
     isLocked: 0
@@ -40,6 +41,7 @@ MonoBehaviour:
       bar. As you peer throuhg the small window you see desks aligned in rows with
       chairs on the far side of each desk.
     displayName: 193
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 20a9b0a52448b0f40b6bb3de6613e939, type: 2}
     direction: South
     isLocked: 0
@@ -50,6 +52,7 @@ MonoBehaviour:
       bar. As you peer throuhg the small window you see desks aligned in rows with
       chairs on the far side of each desk.
     displayName: 194
+    requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: b832f5505b9bcd64ebac595d01028904, type: 2}
     direction: East
     isLocked: 0
@@ -59,3 +62,4 @@ MonoBehaviour:
     doorDescription: A heavy metal door sits propped open. On the other side you
       see a room littered with desks. Each desk has a computer desktop atop it.
     displayName: 195
+    requiredKey: {fileID: 0}

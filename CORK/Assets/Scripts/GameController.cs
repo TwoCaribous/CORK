@@ -13,6 +13,8 @@ public class GameController : MonoBehaviour
     public Text displayText;
     public InputAction[] inputActions;
     [SerializeField] Image roomImageDisplay;
+    [SerializeField] Material roomImageGrayscaleMaterial;
+    [SerializeField] bool roomImagesAlwaysGrayscale = true;
     public PlayerInventoryData playerInventory;
     public GameFlags gameFlags;
 
@@ -63,11 +65,28 @@ public class GameController : MonoBehaviour
     Dictionary<CharacterData,     CharacterSnapshot>  snapshotCharacters  = new Dictionary<CharacterData,     CharacterSnapshot>();
     List<PropData> snapshotPlayerInventoryItems = new List<PropData>();
 
+    Material defaultRoomImageMaterial;
+
     void Awake()
     {
         roomNavigation = GetComponent<RoomNavigation>();
         propPickupSystem = GetComponent<PropPickupSystem>();
+        if (roomImageDisplay != null)
+            defaultRoomImageMaterial = roomImageDisplay.material;
         CaptureWorldState();
+    }
+
+    void ApplyRoomImageMaterial(bool useGrayscale)
+    {
+        if (roomImageDisplay == null)
+            return;
+
+        if (useGrayscale && roomImageGrayscaleMaterial != null)
+            roomImageDisplay.material = roomImageGrayscaleMaterial;
+        else if (defaultRoomImageMaterial != null)
+            roomImageDisplay.material = defaultRoomImageMaterial;
+        else
+            roomImageDisplay.material = null;
     }
 
     void CaptureWorldState()
@@ -257,11 +276,13 @@ public class GameController : MonoBehaviour
         {
             roomImageDisplay.sprite = roomNavigation.currentRoom.roomImage;
             roomImageDisplay.color = Color.white;
+            ApplyRoomImageMaterial(roomImagesAlwaysGrayscale);
         }
         else
         {
             roomImageDisplay.sprite = null;
             roomImageDisplay.color = new Color(0.15f, 0.15f, 0.15f, 1f);
+            ApplyRoomImageMaterial(false);
         }
     }
 
@@ -277,11 +298,14 @@ public class GameController : MonoBehaviour
         {
             roomImageDisplay.sprite = toShow;
             roomImageDisplay.color = Color.white;
+            bool useGrayscale = toShow == roomNavigation.currentRoom.roomImage && roomImagesAlwaysGrayscale;
+            ApplyRoomImageMaterial(useGrayscale);
         }
         else
         {
             roomImageDisplay.sprite = null;
             roomImageDisplay.color = new Color(0.15f, 0.15f, 0.15f, 1f);
+            ApplyRoomImageMaterial(false);
         }
     }
 

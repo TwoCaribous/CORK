@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
+  m_Name: West Wing Near Connection
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
+  roomName: West Wing Near Connection
+  description: You are standing in a small hallway with railing overlooking the First
+    Floor Main Lobby.
+  floorNumber: 2
+  roomImage: {fileID: 2915535775628863619, guid: cfc67e5892bbb074d85946f2efd14681, type: 3}
+  props: []
+  characters: []
+  connections:
+  - connectedRoom: {fileID: 11400000, guid: c788f5ff1951908489d34a630b8b3b56, type: 2}
+    direction: East
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: A walkway to the second floor Landing Study Space.
+    displayName: Landing
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 2c6de0a1601a95c46a6d5aa6946df2b3, type: 2}
+    direction: North
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: A Large doorway leading to the North Hallway.
+    displayName: North Hallway
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 51278795809420c4fa32e2acbe23b700, type: 2}
+    direction: South
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: A Large doorway leading to the South Hallway.
+    displayName: South Hallway
+    requiredKey: {fileID: 0}

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
+  m_Name: Student Lounge
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
+  roomName: Student Lounge
+  description: A room.
+  floorNumber: 3
+  roomImage: {fileID: 2584583190130412931, guid: e892d2c9c1d0b5c438eee27cdbc190d2, type: 3}
+  props: []
+  characters: []
+  connections:
+  - connectedRoom: {fileID: 11400000, guid: b1a37ebf3b585214786f9a65eaec5bb6, type: 2}
+    direction: South
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 
+    displayName: Study Space
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 8d98bab15e87d6a4694bc2ccc3b636e6, type: 2}
+    direction: East
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 
+    displayName: Far Connection
+    requiredKey: {fileID: 0}

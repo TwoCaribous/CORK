@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
+  m_Name: East Wing Near Connection
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
+  roomName: East Landing Elevators
+  description: Now in the East wing, you can see a water fountain and two hallways
+    to the north and south.
+  floorNumber: 2
+  roomImage: {fileID: 6050344308790531871, guid: 56b7e90af40f66441887b58b3040346b, type: 3}
+  props: []
+  characters: []
+  connections:
+  - connectedRoom: {fileID: 11400000, guid: 8892f715e8d88564f98af853872a130f, type: 2}
+    direction: West
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'The hallways lead into a larger landing space on the second
+      story. '
+    displayName: Elevators
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 377b6040709ae424dbe49d1f7fe2257b, type: 2}
+    direction: East
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: The south hallway leads deeper into the east wing.
+    displayName: South Hallway
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: ac71913d1a3677d4fb49ea9c7482379a, type: 2}
+    direction: East
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: The north hallway leads deeper into the east wing.
+    displayName: North Hallway
+    requiredKey: {fileID: 0}

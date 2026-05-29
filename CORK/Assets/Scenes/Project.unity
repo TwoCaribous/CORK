@@ -465,6 +465,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3447b395242c1d245a0b1c10f39fbe79, type: 2}
   - {fileID: 11400000, guid: 56a154c1a14c6c849b74a17ccd04e191, type: 2}
   roomImageDisplay: {fileID: 996064473}
+  roomImageGrayscaleMaterial: {fileID: 0}
+  roomImagesAlwaysGrayscale: 1
   playerInventory: {fileID: 11400000, guid: e7a6e3a737bf80d44b467e62a8e26b2e, type: 2}
   gameFlags: {fileID: 11400000, guid: 0b772c1af404cfb4681a722e5b981ebb, type: 2}
   roomNavigation: {fileID: 0}
@@ -542,8 +544,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 366, y: -4.615}
-  m_SizeDelta: {x: 683.2924, y: 380.77}
+  m_AnchoredPosition: {x: 352, y: 9.6379}
+  m_SizeDelta: {x: 683.2924, y: 177.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &996064473
 MonoBehaviour:
@@ -778,7 +780,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -442.45, y: -210}
+  m_AnchoredPosition: {x: -403, y: -210}
   m_SizeDelta: {x: 493.11, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359698767
@@ -1069,7 +1071,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -344.5, y: -145.9}
+  m_AnchoredPosition: {x: -306, y: -145.9}
   m_SizeDelta: {x: 689, y: 98.1982}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2131637317

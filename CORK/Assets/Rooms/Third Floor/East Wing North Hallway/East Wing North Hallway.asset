@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
+  m_Name: East Wing North Hallway
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
+  roomName: East Wing North Hallway
+  description: A small hallway with offices to the left and a blank wall to the right.
+  floorNumber: 3
+  roomImage: {fileID: -2360290041337488358, guid: 5dc5ae6cdce108746abbfc3e27db4980, type: 3}
+  props: []
+  characters: []
+  connections:
+  - connectedRoom: {fileID: 11400000, guid: 0df9af472b3a38745bf063668047020d, type: 2}
+    direction: West
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: The hallway leads into the junction between a few hallways known
+      as East Wing Near Connection Room.
+    displayName: Near Connection
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 1c22aaf9537ca3044b6bd354ac162026, type: 2}
+    direction: East
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: The hallway leads into the junction between a few hallways known
+      as East Wing Far Connection Room.
+    displayName: Far Connection
+    requiredKey: {fileID: 0}

@@ -17,7 +17,7 @@ MonoBehaviour:
     places to explore, new secrets to find. The ceilings are tall and the possibilities
     endless... '
   floorNumber: 1
-  roomImage: {fileID: 2088623159730601780, guid: d636a66859d9c864591218d66de3a4d0, type: 3}
+  roomImage: {fileID: 7360981783615143082, guid: bce24e05f0cb79a4ea85e48583743f8e, type: 3}
   props:
   - {fileID: 11400000, guid: fc8d28590a13adc4688ad14f360232d4, type: 2}
   - {fileID: 11400000, guid: 9d2ed01c836d94146828a90b4a27800d, type: 2}
@@ -62,8 +62,8 @@ MonoBehaviour:
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: It is a clear glass door with STCU written on it. Though STCU
-      is a apokane class, it is not EWU... I dont think you can go there
+    doorDescription: A glass door with STCU written on it. Though STCU is a Spokane
+      class, it is not EWU... I dont think you can go there.
     displayName: STCU
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: cc03f6f00a5ae7a45b4fbf1c9e129560, type: 2}
@@ -74,7 +74,7 @@ MonoBehaviour:
     hasBeenVisited: 0
     doorDescription: It is a hallway that leads further into the building. You see
       many doors and a bathroom sign.
-    displayName: Hallway Entry
+    displayName: Hallway
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: c788f5ff1951908489d34a630b8b3b56, type: 2}
     direction: Second Floor
