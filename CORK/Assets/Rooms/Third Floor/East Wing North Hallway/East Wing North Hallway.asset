@@ -19,7 +19,7 @@ MonoBehaviour:
   props: []
   characters: []
   connections:
-  - connectedRoom: {fileID: 11400000, guid: 83aa6b041c93bc446b3a05f501c201b6, type: 2}
+  - connectedRoom: {fileID: 11400000, guid: 0df9af472b3a38745bf063668047020d, type: 2}
     direction: West
     isLocked: 0
     lockedMessage: 
@@ -29,7 +29,7 @@ MonoBehaviour:
       as East Wing Near Connection Room.
     displayName: Near Connection
     requiredKey: {fileID: 0}
-  - connectedRoom: {fileID: 11400000, guid: 70cbe71c19073084f9229c6631726c5d, type: 2}
+  - connectedRoom: {fileID: 11400000, guid: 1c22aaf9537ca3044b6bd354ac162026, type: 2}
     direction: East
     isLocked: 0
     lockedMessage: 

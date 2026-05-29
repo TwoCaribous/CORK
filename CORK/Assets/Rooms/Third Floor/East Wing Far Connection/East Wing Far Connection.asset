@@ -20,7 +20,7 @@ MonoBehaviour:
   props: []
   characters: []
   connections:
-  - connectedRoom: {fileID: 11400000, guid: ac71913d1a3677d4fb49ea9c7482379a, type: 2}
+  - connectedRoom: {fileID: 11400000, guid: 40f691154a0082c40b5ed4616353f4ea, type: 2}
     direction: North
     isLocked: 0
     lockedMessage: 
@@ -29,7 +29,7 @@ MonoBehaviour:
     doorDescription: The office hallways lead to a smaller hallway to the north
     displayName: North Hallway
     requiredKey: {fileID: 0}
-  - connectedRoom: {fileID: 11400000, guid: 377b6040709ae424dbe49d1f7fe2257b, type: 2}
+  - connectedRoom: {fileID: 11400000, guid: 830309fd54afe064084a58c1fcaf6ce3, type: 2}
     direction: South
     isLocked: 0
     lockedMessage: 

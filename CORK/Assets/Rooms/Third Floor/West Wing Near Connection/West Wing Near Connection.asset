@@ -18,4 +18,31 @@ MonoBehaviour:
   roomImage: {fileID: -2097244762608925020, guid: ca88b12df57877542802eef39a68d09e, type: 3}
   props: []
   characters: []
-  connections: []
+  connections:
+  - connectedRoom: {fileID: 11400000, guid: 9d09abc6cebc29a49a2c5715dd4832f5, type: 2}
+    direction: East
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 
+    displayName: Landing
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 4c63597b6f7e70e449194cb8e001a455, type: 2}
+    direction: West
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 
+    displayName: North Hallway
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: c2fec36d501190f45ac5e7b183a30d2e, type: 2}
+    direction: West
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 
+    displayName: South Hallway
+    requiredKey: {fileID: 0}

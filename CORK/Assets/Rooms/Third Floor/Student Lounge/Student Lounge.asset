@@ -19,12 +19,21 @@ MonoBehaviour:
   props: []
   characters: []
   connections:
-  - connectedRoom: {fileID: 11400000, guid: 17b49a8573488bf4c8020849a315dfc8, type: 2}
+  - connectedRoom: {fileID: 11400000, guid: b1a37ebf3b585214786f9a65eaec5bb6, type: 2}
     direction: South
     isLocked: 0
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: door
-    displayName: 
+    doorDescription: 
+    displayName: Study Space
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 8d98bab15e87d6a4694bc2ccc3b636e6, type: 2}
+    direction: East
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 
+    displayName: Far Connection
     requiredKey: {fileID: 0}

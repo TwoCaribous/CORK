@@ -30,12 +30,21 @@ MonoBehaviour:
     doorDescription: A normal looking stainless steel elevator.
     displayName: Elevator
     requiredKey: {fileID: 0}
-  - connectedRoom: {fileID: 11400000, guid: 83aa6b041c93bc446b3a05f501c201b6, type: 2}
-    direction: Right
+  - connectedRoom: {fileID: 11400000, guid: 0df9af472b3a38745bf063668047020d, type: 2}
+    direction: East
     isLocked: 0
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: 'A small safety doorway into the office space. '
     displayName: Offices
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 88ff59ccffb0ef240b986800add76fbe, type: 2}
+    direction: West
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'A small safety doorway into the office space. '
+    displayName: Near Connection
     requiredKey: {fileID: 0}
