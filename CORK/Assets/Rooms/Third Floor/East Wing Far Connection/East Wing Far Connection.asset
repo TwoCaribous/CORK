@@ -16,7 +16,7 @@ MonoBehaviour:
   description: 'A small hallway at the back of the east wing. The hallway connects
     the north and south hallways on the far east side of the building. '
   floorNumber: 3
-  roomImage: {fileID: 0}
+  roomImage: {fileID: 7705524438992098003, guid: 4196cf7b7ee20654a936c62f03a5401f, type: 3}
   props: []
   characters: []
   connections:

@@ -15,7 +15,7 @@ MonoBehaviour:
   roomName: Main Entry
   description: 'You are in a small entry way, with doors to your left and right.  '
   floorNumber: 1
-  roomImage: {fileID: 7360981783615143082, guid: bce24e05f0cb79a4ea85e48583743f8e, type: 3}
+  roomImage: {fileID: -3056144404172750271, guid: 89db1e4999e189e4fb81831fe7cbe960, type: 3}
   props:
   - {fileID: 11400000, guid: 2aa1dea8f2e0a5b49a1d7e7875ee80aa, type: 2}
   - {fileID: 11400000, guid: 85c21dab6ab9efd47b7a2308a3b6d7f7, type: 2}

@@ -15,7 +15,7 @@ MonoBehaviour:
   roomName: East Wing North Hallway
   description: A small hallway with offices to the left and a blank wall to the right.
   floorNumber: 3
-  roomImage: {fileID: 0}
+  roomImage: {fileID: -2360290041337488358, guid: 5dc5ae6cdce108746abbfc3e27db4980, type: 3}
   props: []
   characters: []
   connections:

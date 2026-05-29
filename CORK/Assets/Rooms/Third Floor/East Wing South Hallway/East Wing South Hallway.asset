@@ -16,7 +16,7 @@ MonoBehaviour:
   description: A short office hallway with offices to the right and some shorter
     TA offices to the left.
   floorNumber: 3
-  roomImage: {fileID: 0}
+  roomImage: {fileID: 7305651002182911793, guid: 29e065962d0843249ac664b2ee92ea95, type: 3}
   props: []
   characters: []
   connections:
@@ -26,7 +26,7 @@ MonoBehaviour:
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: The hallway leads into another connection
+    doorDescription: The hallway leads into another connection.
     displayName: Near Connection
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 1c22aaf9537ca3044b6bd354ac162026, type: 2}
@@ -40,8 +40,8 @@ MonoBehaviour:
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 49389375800f84046b79cfe76be974e6, type: 2}
     direction: South
-    isLocked: 0
-    lockedMessage: 
+    isLocked: 1
+    lockedMessage: Too many people in the way.
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: 'The south hallway leads to room 334. Dr. Cain''s office. '

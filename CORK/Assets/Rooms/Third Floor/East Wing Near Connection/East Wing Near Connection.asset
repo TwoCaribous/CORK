@@ -16,11 +16,11 @@ MonoBehaviour:
   description: 'You enter into the East Offices and see a longer U-shaped hallway
     with a north and south entrance to the various offices. '
   floorNumber: 3
-  roomImage: {fileID: 0}
+  roomImage: {fileID: -8406010829649259345, guid: 3827dc73730f10b4ba8c1b8dffa3b061, type: 3}
   props: []
   characters: []
   connections:
-  - connectedRoom: {fileID: 11400000, guid: 6057d23bb480c1c4c91f820520d26d61, type: 2}
+  - connectedRoom: {fileID: 11400000, guid: 9d09abc6cebc29a49a2c5715dd4832f5, type: 2}
     direction: West
     isLocked: 0
     lockedMessage: 
