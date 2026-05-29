@@ -18,7 +18,8 @@ MonoBehaviour:
     end, and a hallway that curves to the left.
   floorNumber: 2
   roomImage: {fileID: 1244625910692074434, guid: 359bcb932ca6f594b85c8276b26b7d2a, type: 3}
-  props: []
+  props:
+  - {fileID: 11400000, guid: c9b6f3007274ea443a43db3112882b0f, type: 2}
   characters: []
   connections:
   - connectedRoom: {fileID: 11400000, guid: 011ea5e1c77c3164787ee37a4c85ca11, type: 2}

@@ -39,11 +39,11 @@ MonoBehaviour:
     displayName: Far Connection
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 49389375800f84046b79cfe76be974e6, type: 2}
-    direction: South
-    isLocked: 1
-    lockedMessage: Too many people in the way.
+    direction: Right
+    isLocked: 0
+    lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
-    doorDescription: 'The south hallway leads to room 334. Dr. Cain''s office. '
+    doorDescription: 'Dr. Cain''s office. '
     displayName: Cain's Office
     requiredKey: {fileID: 0}
