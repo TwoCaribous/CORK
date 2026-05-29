@@ -17,7 +17,7 @@ MonoBehaviour:
     with students hard at work. It''s surrounded by large windows overlooking norhtern
     Spokane.  '
   floorNumber: 2
-  roomImage: {fileID: 0}
+  roomImage: {fileID: 4581212182703318551, guid: 516fa70d97a97824ba9c4584da53e207, type: 3}
   props:
   - {fileID: 11400000, guid: bb110f760d1473541be161b1cb774364, type: 2}
   characters:

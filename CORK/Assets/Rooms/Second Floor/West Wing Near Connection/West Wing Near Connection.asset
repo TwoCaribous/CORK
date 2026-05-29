@@ -16,7 +16,7 @@ MonoBehaviour:
   description: You are standing in a small hallway with railing overlooking the First
     Floor Main Lobby.
   floorNumber: 2
-  roomImage: {fileID: 0}
+  roomImage: {fileID: 2915535775628863619, guid: cfc67e5892bbb074d85946f2efd14681, type: 3}
   props: []
   characters: []
   connections:

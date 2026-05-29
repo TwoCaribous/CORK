@@ -17,7 +17,7 @@ MonoBehaviour:
     Wing Hallways. The Right hallway continues to the West Study Space, and you see
     a door in the middle of the hallway divider.  '
   floorNumber: 2
-  roomImage: {fileID: 0}
+  roomImage: {fileID: 1827220068655352599, guid: 7a4276a7f278a7c49a3e37571e7f874e, type: 3}
   props: []
   characters: []
   connections:

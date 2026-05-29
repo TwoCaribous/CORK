@@ -17,7 +17,7 @@ MonoBehaviour:
     the north and south hallway, but also a smaller study space farther down the
     southern hallways trajectory. '
   floorNumber: 2
-  roomImage: {fileID: 0}
+  roomImage: {fileID: 4108389532859217246, guid: ef323f09e47bf744ca6f28fc455f4da2, type: 3}
   props: []
   characters: []
   connections:

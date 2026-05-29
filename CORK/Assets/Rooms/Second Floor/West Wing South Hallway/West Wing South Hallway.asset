@@ -17,7 +17,7 @@ MonoBehaviour:
     a long blank wall to your right. It looks like there are more classrooms at the
     far end, and a hallway that curves to the right.
   floorNumber: 2
-  roomImage: {fileID: 0}
+  roomImage: {fileID: 404539179502101130, guid: c6684c841a1878d4ea8c38e6226052c3, type: 3}
   props: []
   characters: []
   connections:

@@ -17,7 +17,7 @@ MonoBehaviour:
     and a long blank wall on your left. At the end of the hallway you see another
     connection and a study space further beyond.
   floorNumber: 2
-  roomImage: {fileID: 0}
+  roomImage: {fileID: -7695237504899063462, guid: eced4d1ec5f1e3f48b72349c72d53751, type: 3}
   props: []
   characters: []
   connections:

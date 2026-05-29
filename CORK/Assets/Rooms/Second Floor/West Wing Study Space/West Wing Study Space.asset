@@ -17,7 +17,7 @@ MonoBehaviour:
     a large table to the left of the room and various chairs around the space for
     work or leisure.
   floorNumber: 2
-  roomImage: {fileID: 0}
+  roomImage: {fileID: 4788192846909190740, guid: 8d4604d155b0df34e9452e7acbe23caf, type: 3}
   props: []
   characters: []
   connections:

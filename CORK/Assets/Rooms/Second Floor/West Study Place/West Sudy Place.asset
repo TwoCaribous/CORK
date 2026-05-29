@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
+  m_Name: West Sudy Place
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
+  roomName: 
+  description: An small open study space. Chairs are on the left side and you see
+    some students doing work on their laptops.
+  floorNumber: 2
+  roomImage: {fileID: 0}
+  props: []
+  characters: []
+  connections:
+  - connectedRoom: {fileID: 11400000, guid: dfed3ce723106254a8519cd4b31a9751, type: 2}
+    direction: north
+    isLocked: 1
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: A normal sized classroom door
+    displayName: 
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 9e6dc098cb15e2e4bb4170781d29904c, type: 2}
+    direction: south
+    isLocked: 1
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: A normal sized classroom door
+    displayName: 
+    requiredKey: {fileID: 0}

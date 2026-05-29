@@ -16,7 +16,7 @@ MonoBehaviour:
   description: Now in the East wing, you can see a water fountain and two hallways
     to the north and south.
   floorNumber: 2
-  roomImage: {fileID: 0}
+  roomImage: {fileID: 6050344308790531871, guid: 56b7e90af40f66441887b58b3040346b, type: 3}
   props: []
   characters: []
   connections:

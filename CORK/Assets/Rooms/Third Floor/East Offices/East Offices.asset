@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
+  m_Name: East Offices
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
+  roomName: East Offices
+  description: You come through the doors to a long U-shpaed hallway with offices
+    on every side. Which one is Dr. Cains?
+  floorNumber: 3
+  roomImage: {fileID: 0}
+  props: []
+  characters: []
+  connections:
+  - connectedRoom: {fileID: 11400000, guid: 9d09abc6cebc29a49a2c5715dd4832f5, type: 2}
+    direction: west
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'A small safety doorway into the lobby study space. '
+    displayName: Lobby
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 6280e96562fc216419fb011fa20cd1dd, type: 2}
+    direction: right
+    isLocked: 1
+    lockedMessage: 'The man inside looks very busy, and is talking very loud, best
+      not to disturb him. '
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'A normal sized metal office door. '
+    displayName: 343
+    requiredKey: {fileID: 0}

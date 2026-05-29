@@ -16,7 +16,7 @@ MonoBehaviour:
   description: 'You move further down the hallway and see various classrooms to your
     left and a long blank wall with some bathrooms to your right. '
   floorNumber: 2
-  roomImage: {fileID: 0}
+  roomImage: {fileID: -6788894772661965019, guid: 0c7359ef92cfc0f4a86d06862ae07f40, type: 3}
   props: []
   characters: []
   connections:

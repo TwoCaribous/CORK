@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a93f7b503a8114eb425fd6a5f0a6ec, type: 3}
+  m_Name: Conversation Before getting billy a beer
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Dialogue.DialogueEntry
+  lines:
+  - speakerName: Billy
+    text: Hey Whats up! My name name is Billy Two Step and I loovvve beer
+  - speakerName: Billy
+    text: I just dont have NO MONEY!!!
+  - speakerName: You
+    text: I just dont have NO MONEY!!!

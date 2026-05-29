@@ -15,7 +15,7 @@ MonoBehaviour:
   roomName: East Wing Study Space
   description: 'You see a small study space with a few chairs and desks to your left. '
   floorNumber: 2
-  roomImage: {fileID: 0}
+  roomImage: {fileID: 600743290566950935, guid: f1d8b2a0e4860eb4984a93373555a6b6, type: 3}
   props: []
   characters: []
   connections:

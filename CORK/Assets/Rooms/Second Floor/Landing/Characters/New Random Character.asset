@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c885fc49a73507941b5d7d83e8ee339b, type: 3}
+  m_Name: New Random Character
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.RandomCharacterData
+  characterName: Oz
+  description: 'A guy working on his laptop at the back left of the space. He seems
+    to be listening to Black Sabbath with his cheap earphones. '
+  characterType: 1
+  portrait: {fileID: 0}
+  hasBeenMet: 0
+  ambientLines:
+  - speakerName: Oz
+    text: The seven hundreth unicorn is waiting in the sky.
+  - speakerName: Oz
+    text: A symptom of the universe, A love that never dies!

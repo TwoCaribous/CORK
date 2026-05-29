@@ -17,7 +17,7 @@ MonoBehaviour:
     are farther back from the landing and can see down the east hallway and some
     of the classrooms beyond.
   floorNumber: 2
-  roomImage: {fileID: 0}
+  roomImage: {fileID: -6235265630265182687, guid: d65c5e8a2ac469043a60bbb85431978d, type: 3}
   props: []
   characters: []
   connections:
