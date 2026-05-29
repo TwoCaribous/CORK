@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
-  m_Name: Lobby Study Space
+  m_Name: Lobby Study Space 3
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
   roomName: Central Study Space
   description: 'You enter a larger communal study area on the third floor. Chairs
     and tables are all about and you can see hallways to the left and right. Students
     are working hard and you can see '
   floorNumber: 3
-  roomImage: {fileID: 0}
+  roomImage: {fileID: -3396390944389209629, guid: 521b7eb8a4b6b364ab6e3173b91c4fbc, type: 3}
   props: []
   characters: []
   connections:
-  - connectedRoom: {fileID: 11400000, guid: c788f5ff1951908489d34a630b8b3b56, type: 2}
+  - connectedRoom: {fileID: 11400000, guid: 8892f715e8d88564f98af853872a130f, type: 2}
     direction: Elevator
     isLocked: 0
     lockedMessage: 
@@ -30,7 +30,7 @@ MonoBehaviour:
     doorDescription: A normal looking stainless steel elevator.
     displayName: Elevator
     requiredKey: {fileID: 0}
-  - connectedRoom: {fileID: 11400000, guid: aee5ba0e3216b144582114e677a93885, type: 2}
+  - connectedRoom: {fileID: 11400000, guid: 83aa6b041c93bc446b3a05f501c201b6, type: 2}
     direction: Right
     isLocked: 0
     lockedMessage: 

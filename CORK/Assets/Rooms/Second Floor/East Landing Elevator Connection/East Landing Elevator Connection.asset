@@ -39,7 +39,7 @@ MonoBehaviour:
     doorDescription: 'Into the hallway, adventure awaits. '
     displayName: Near Connection
     requiredKey: {fileID: 0}
-  - connectedRoom: {fileID: 11400000, guid: 6057d23bb480c1c4c91f820520d26d61, type: 2}
+  - connectedRoom: {fileID: 11400000, guid: 9d09abc6cebc29a49a2c5715dd4832f5, type: 2}
     direction: Up
     isLocked: 0
     lockedMessage: 

@@ -10,21 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
-  m_Name: Student Lounge
+  m_Name: West Wing Study Space
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
-  roomName: Student Lounge
-  description: A room.
+  roomName: West Wing Study Space
+  description: Study space.
   floorNumber: 3
-  roomImage: {fileID: 2584583190130412931, guid: e892d2c9c1d0b5c438eee27cdbc190d2, type: 3}
+  roomImage: {fileID: 357787960701677753, guid: ed1b69d3d7e51044d94f0468353be9bd, type: 3}
   props: []
   characters: []
-  connections:
-  - connectedRoom: {fileID: 11400000, guid: 17b49a8573488bf4c8020849a315dfc8, type: 2}
-    direction: South
-    isLocked: 0
-    lockedMessage: 
-    isHidden: 0
-    hasBeenVisited: 0
-    doorDescription: door
-    displayName: 
-    requiredKey: {fileID: 0}
+  connections: []

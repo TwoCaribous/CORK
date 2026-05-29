@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f391ac4019dc1245b409a1c48140dc2, type: 3}
-  m_Name: West Study Space
+  m_Name: West Wing South Hallway
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
-  roomName: 
-  description: The hallway opens
-  floorNumber: 0
-  roomImage: {fileID: 0}
+  roomName: West Wing South Hallway
+  description: South hallway.
+  floorNumber: 3
+  roomImage: {fileID: 5010379493497695173, guid: 6148043e68cde9f42a376d7b5a9d054a, type: 3}
   props: []
   characters: []
   connections: []
