@@ -21,7 +21,7 @@ MonoBehaviour:
   characters: []
   connections:
   - connectedRoom: {fileID: 11400000, guid: c788f5ff1951908489d34a630b8b3b56, type: 2}
-    direction: East
+    direction: Back
     isLocked: 0
     lockedMessage: 
     isHidden: 0
@@ -30,7 +30,7 @@ MonoBehaviour:
     displayName: Landing
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 2c6de0a1601a95c46a6d5aa6946df2b3, type: 2}
-    direction: North
+    direction: Right
     isLocked: 0
     lockedMessage: 
     isHidden: 0
@@ -39,7 +39,7 @@ MonoBehaviour:
     displayName: North Hallway
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 51278795809420c4fa32e2acbe23b700, type: 2}
-    direction: South
+    direction: Left
     isLocked: 0
     lockedMessage: 
     isHidden: 0

@@ -20,11 +20,29 @@ MonoBehaviour:
   characters: []
   connections:
   - connectedRoom: {fileID: 11400000, guid: 70cbe71c19073084f9229c6631726c5d, type: 2}
-    direction: West
+    direction: Back
     isLocked: 0
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: 'The study space leads into a convergence of hallways. '
     displayName: Far Connection
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: b69e3d87a974a224294db0afd09a15f2, type: 2}
+    direction: Left
+    isLocked: 1
+    lockedMessage: A class is in session, best not disturn them.
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'A normal looking classroom door. '
+    displayName: 216
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: ae5d7b52a9044e3459c44ada551b911d, type: 2}
+    direction: Right
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'A normal looking classroom door. '
+    displayName: 219
     requiredKey: {fileID: 0}
