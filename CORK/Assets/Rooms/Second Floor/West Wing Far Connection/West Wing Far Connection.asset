@@ -22,7 +22,7 @@ MonoBehaviour:
   characters: []
   connections:
   - connectedRoom: {fileID: 11400000, guid: cef6fde523c1ab044b1ff1643ac93393, type: 2}
-    direction: West
+    direction: Right
     isLocked: 0
     lockedMessage: 
     isHidden: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
     displayName: Study Space
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 2c6de0a1601a95c46a6d5aa6946df2b3, type: 2}
-    direction: East
+    direction: Left
     isLocked: 0
     lockedMessage: 
     isHidden: 0
@@ -40,11 +40,20 @@ MonoBehaviour:
     displayName: North Hallway
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 51278795809420c4fa32e2acbe23b700, type: 2}
-    direction: East
+    direction: Front
     isLocked: 0
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: 'A long Hallway Leading to the Near Connection. '
     displayName: South Hallway
+    requiredKey: {fileID: 0}
+  - connectedRoom: {fileID: 11400000, guid: 73b490d238d5ef748af5c7a272f63deb, type: 2}
+    direction: Front
+    isLocked: 0
+    lockedMessage: 
+    isHidden: 0
+    hasBeenVisited: 0
+    doorDescription: 'A door at the end of the hallway. '
+    displayName: 206
     requiredKey: {fileID: 0}
