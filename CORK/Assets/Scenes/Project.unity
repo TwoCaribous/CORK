@@ -455,7 +455,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 112fa66d6b06082469c2d3a3c7f49c3d, type: 2}
   - {fileID: 11400000, guid: 34ba46df7d6278b488f13f0e4e5a6cba, type: 2}
   - {fileID: 11400000, guid: e923524717d8f5c42b7d8853276dd861, type: 2}
-  - {fileID: 11400000, guid: ee38f2d7e88d28b43b2fe3e4f346d19a, type: 2}
+  - {fileID: 11400000, guid: 0bb545a46a35e6940afc898be7527621, type: 2}
   - {fileID: 11400000, guid: 85bb04541f53ea44aa617773df93cf30, type: 2}
   - {fileID: 11400000, guid: 9fa2e3d869db4814b9e47ca2d0dc907d, type: 2}
   - {fileID: 11400000, guid: 36260eab3a146984d826c70c85c96f6c, type: 2}
@@ -464,6 +464,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4600fa37ad6fc7d42828b7488b9aee3d, type: 2}
   - {fileID: 11400000, guid: 3447b395242c1d245a0b1c10f39fbe79, type: 2}
   - {fileID: 11400000, guid: 56a154c1a14c6c849b74a17ccd04e191, type: 2}
+  - {fileID: 11400000, guid: fdb6b80b8c8ed5041bd27b2bc1154a70, type: 2}
   roomImageDisplay: {fileID: 996064473}
   roomImageGrayscaleMaterial: {fileID: 0}
   roomImagesAlwaysGrayscale: 1
