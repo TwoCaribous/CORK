@@ -18,7 +18,7 @@ MonoBehaviour:
     I''ve never learned their name; I''ve only known them as the Puzzle Guy. '
   characterType: 1
   portrait: {fileID: 0}
-  hasBeenMet: 0
+  hasBeenMet: 1
   ambientLines:
   - speakerName: Puzzle Guy
     text: 'Can''t you see I''m busy?! I can''t find some of these pieces! '
@@ -27,3 +27,13 @@ MonoBehaviour:
   - speakerName: Thought
     text: '"I don''t really have a knack for these kinda things. I think I''ll prolly
       leave them alone with that."'
+  - speakerName: 
+    text: 'Do you have a name?
+
+      Puzzle Guy: That''s none of your business!
+      Next thing you know you''ll start asking me about what I do here besides puzzles!
+
+      :
+      Umm.....What do you-
+
+      Puzzle Guy: SHUT UP! You''re breaking my concentration!'

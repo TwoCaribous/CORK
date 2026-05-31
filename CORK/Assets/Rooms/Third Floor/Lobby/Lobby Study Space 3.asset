@@ -15,12 +15,17 @@ MonoBehaviour:
   roomName: Central Study Space
   description: 'You enter a larger communal study area on the third floor. Chairs
     and tables are all about and you can see hallways to the left and right. Students
-    are working hard and you can see '
+    are working hard and you can see some flyers, a big printer, and a laptop cart
+    for taking and returning rental laptops. '
   floorNumber: 3
   roomImage: {fileID: -3396390944389209629, guid: 521b7eb8a4b6b364ab6e3173b91c4fbc, type: 3}
-  props: []
+  props:
+  - {fileID: 11400000, guid: 042f3fd4111748f409d9d7ba5aca7592, type: 2}
+  - {fileID: 11400000, guid: 53a58a66784d4b44891cef1f4523dc21, type: 2}
+  - {fileID: 11400000, guid: 6b13785f09bb8984f84384293c74c799, type: 2}
   characters:
   - {fileID: 11400000, guid: da4c9c9f2389a1b4a86bc5cde1aa8b55, type: 2}
+  - {fileID: 11400000, guid: 8f11e219757d3f043a31cda163a5517b, type: 2}
   connections:
   - connectedRoom: {fileID: 11400000, guid: 8892f715e8d88564f98af853872a130f, type: 2}
     direction: Elevator
