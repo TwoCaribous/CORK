@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8bdd3c1d79d6934793f96f094bf50e8, type: 3}
   m_Name: Books
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
-  propName: 
-  description: 
+  propName: Books
+  description: An assortment of books is stacked next to the game boards, also in
+    a (appropriately named) bookshelf.
   canBeTaken: 0
   takeMessage: 
-  cantTakeMessage: 
+  cantTakeMessage: 'Reading?! You don''t feel any compulsion to really entertain
+    the thought of taking a book, let alone opening one. You shudder at the thought,
+    wondering what has gotten into you to consider such an academic pursuit. '
   propImage: {fileID: 0}
   hasBeenDiscovered: 0

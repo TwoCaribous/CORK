@@ -15,8 +15,8 @@ MonoBehaviour:
   propName: Orange Juice
   description: A carton of orange juice, with the spout mysteriously ripped off.
   canBeTaken: 1
-  takeMessage: You take the carton with you, hoping that it won't spill and drench
-    the other contents of your bag.
+  takeMessage: You take the carton of juice with you, hoping that it won't spill
+    and drench the other contents of your bag.
   cantTakeMessage: 
   propImage: {fileID: 0}
   hasBeenDiscovered: 0

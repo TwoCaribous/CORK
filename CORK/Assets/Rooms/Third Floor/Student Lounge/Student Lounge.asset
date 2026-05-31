@@ -21,7 +21,10 @@ MonoBehaviour:
   props:
   - {fileID: 11400000, guid: 7681336cece26204e8f593d3e371d685, type: 2}
   - {fileID: 11400000, guid: dcf426ad9f5ac9a45961b65fbc1c14c3, type: 2}
-  characters: []
+  - {fileID: 11400000, guid: f894ed653afc8814ea76c7c1a4878941, type: 2}
+  - {fileID: 11400000, guid: e476571e19cede641bb719b28cce752d, type: 2}
+  characters:
+  - {fileID: 11400000, guid: d165c2b5a44edd7498e9fc2c18205658, type: 2}
   connections:
   - connectedRoom: {fileID: 11400000, guid: b1a37ebf3b585214786f9a65eaec5bb6, type: 2}
     direction: South

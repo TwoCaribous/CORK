@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8bdd3c1d79d6934793f96f094bf50e8, type: 3}
   m_Name: Microwave
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
-  propName: 
-  description: 
+  propName: Microwave
+  description: One of the microwaves sits on the table. It's definitely a bit dirty,
+    from what you can observe.
   canBeTaken: 0
   takeMessage: 
-  cantTakeMessage: 
+  cantTakeMessage: It's a bit heavy to take with you, and it would likely crush the
+    other contents inside of the bag.
   propImage: {fileID: 0}
   hasBeenDiscovered: 0

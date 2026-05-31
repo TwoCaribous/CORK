@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8bdd3c1d79d6934793f96f094bf50e8, type: 3}
   m_Name: Puzzle
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
-  propName: 
-  description: 
+  propName: Puzzle
+  description: A puzzle of cats sits before you. The border and outer pieces are
+    complete, leaving the middle pieces to be done.
   canBeTaken: 0
   takeMessage: 
-  cantTakeMessage: 
+  cantTakeMessage: Disregarding the mess that would make, this would also enrage
+    the person who had been working on it.
   propImage: {fileID: 0}
   hasBeenDiscovered: 0

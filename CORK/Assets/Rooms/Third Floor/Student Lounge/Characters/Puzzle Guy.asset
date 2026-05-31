@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.RandomCharacterData
   characterName: Puzzle Guy
   description: 'Someone sits hunched over at one of the tables, staring intenstly
-    at an incomplete puzzle. They seem to be chewing on one of the puzzle pieces. '
+    at an incomplete puzzle. They seem to be chewing on one of the puzzle pieces.
+    I''ve never learned their name; I''ve only known them as the Puzzle Guy. '
   characterType: 1
   portrait: {fileID: 0}
   hasBeenMet: 0
@@ -23,6 +24,6 @@ MonoBehaviour:
     text: 'Can''t you see I''m busy?! I can''t find some of these pieces! '
   - speakerName: Puzzle Guy
     text: 'I don''t want any help with this! I''m doing this alone! '
-  - speakerName: Myself
+  - speakerName: Thought
     text: '"I don''t really have a knack for these kinda things. I think I''ll prolly
       leave them alone with that."'

@@ -18,7 +18,8 @@ MonoBehaviour:
     western wall. '
   floorNumber: 3
   roomImage: {fileID: 814360791158410250, guid: 3c5251df47e5eba488a777a03330c967, type: 3}
-  props: []
+  props:
+  - {fileID: 11400000, guid: 3fc296027400a834eb133d36a736c17d, type: 2}
   characters:
   - {fileID: 11400000, guid: cef5fc68c9eaeeb4f8b821818de29089, type: 2}
   connections:

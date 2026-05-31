@@ -16,7 +16,7 @@ MonoBehaviour:
   description: 'An egg can be found in the side shelf, missing a carton to hold it,
     let alone any other eggs. '
   canBeTaken: 1
-  takeMessage: 'You deposit the egg into your bag. You ponder for a moment about
+  takeMessage: 'You deposit the egg into your bag. You wonder for a moment about
     why you seem to leave items in your bag in such a haphazard fashion, but there''s
     bigger things to worry about for now. '
   cantTakeMessage: 

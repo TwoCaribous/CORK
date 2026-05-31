@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8bdd3c1d79d6934793f96f094bf50e8, type: 3}
   m_Name: Game Boards
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
-  propName: 
-  description: 
+  propName: Game Boards
+  description: An assortment of game boards stacked on top of one another in a bookshelf.
   canBeTaken: 0
   takeMessage: 
-  cantTakeMessage: 
+  cantTakeMessage: You ponder taking out Battleship, but it sits at the bottom of
+    a rather large stack of game boards. Taking it would likely spill everything
+    and make a mess.
   propImage: {fileID: 0}
   hasBeenDiscovered: 0
