@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c885fc49a73507941b5d7d83e8ee339b, type: 3}
+  m_Name: Puzzle Guy
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.RandomCharacterData
+  characterName: Puzzle Guy
+  description: 'Someone sits hunched over at one of the tables, staring intenstly
+    at an incomplete puzzle. They seem to be chewing on one of the puzzle pieces. '
+  characterType: 1
+  portrait: {fileID: 0}
+  hasBeenMet: 0
+  ambientLines:
+  - speakerName: Puzzle Guy
+    text: 'Can''t you see I''m busy?! I can''t find some of these pieces! '
+  - speakerName: Puzzle Guy
+    text: 'I don''t want any help with this! I''m doing this alone! '
+  - speakerName: Myself
+    text: '"I don''t really have a knack for these kinda things. I think I''ll prolly
+      leave them alone with that."'
