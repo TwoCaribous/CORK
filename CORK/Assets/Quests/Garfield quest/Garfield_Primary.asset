@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a93f7b503a8114eb425fd6a5f0a6ec, type: 3}
+  m_Name: Garfield_Primary
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Dialogue.DialogueEntry
+  lines:
+  - speakerName: Professor Garfield
+    text: "Oh \u2014 oh, you're a student, right? You have to help me. I was trying
+      to set up a department pizza party for these poor kids waiting on Dr. Cain,
+      but I've lost the menu for Cosmos Pizza. I CAN'T REMEMBER THE NUMBER."
+  - speakerName: Professor Garfield
+    text: I'm almost certain I left it in one of the classrooms downstairs. Room
+      193, maybe? I was grading papers in there yesterday.

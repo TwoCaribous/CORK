@@ -19,9 +19,10 @@ MonoBehaviour:
   roomImage: {fileID: 0}
   props:
   - {fileID: 11400000, guid: d4feefb24ffc24b4ca763eb7e99a6485, type: 2}
+  - {fileID: 11400000, guid: f5d1439aef9f26e4badc23207c7b660f, type: 2}
   characters:
   - {fileID: 11400000, guid: 352ef36ef8284d241b1ff4a54f187d08, type: 2}
-  - {fileID: 11400000, guid: 80e6c21e9a92c1343a02c63d78a50687, type: 2}
+  - {fileID: 11400000, guid: 92a4c413483288145868ad8b9a837344, type: 2}
   connections:
   - connectedRoom: {fileID: 11400000, guid: 49728963a222ef646bcba03ff23683b8, type: 2}
     direction: North
@@ -32,3 +33,4 @@ MonoBehaviour:
     doorDescription: It is a clear glass door, on the other side you see the entry
       way to the Catalyst Building.
     displayName: Entryway
+    requiredKey: {fileID: 0}

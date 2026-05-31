@@ -20,9 +20,11 @@ MonoBehaviour:
     -Shot
     of Tequila $5
 
-    -Sandwhich $2
+    -Sandwhich $8
 
     -Redbull $2'
   canBeTaken: 1
+  takeMessage: 
+  cantTakeMessage: 
   propImage: {fileID: 0}
   hasBeenDiscovered: 0

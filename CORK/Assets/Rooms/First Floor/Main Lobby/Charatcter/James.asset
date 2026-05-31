@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: James
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.RandomCharacterData
   characterName: Cool Guy James
-  description: A very cool dude with sun glasses and a fadora stands leaning on the
+  description: A very cool dude with sun glasses and a fedora stands leaning on the
     wall
   characterType: 0
   portrait: {fileID: 0}
@@ -22,3 +22,6 @@ MonoBehaviour:
   - speakerName: Really Super Cool Guy
     text: '"Only chumps get to class on time. I always show up 5 minutes late...
       To esablish my dominance."'
+  - speakerName: Really Super Cool Guy
+    text: '"I heard there''s like sixty people in line up on three. Someone should
+      just pull the alarm and put everyone out of their misery."'

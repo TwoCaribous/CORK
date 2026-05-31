@@ -10,16 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b59d0aa06ed27e4d8175e82336828e1, type: 3}
-  m_Name: Hacking Henry
+  m_Name: Cain
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.EssentialCharacterData
-  characterName: Hacking Henry
-  description: Slouched over a computer typing furiously, you see a young man with
-    glasses... He is deeply engrosed in his work.
+  characterName: Doctor Cain
+  description: The man, the myth, the legend sits at his desk. Your quest is near
+    complete
   characterType: 0
   portrait: {fileID: 0}
+  hasBeenMet: 0
   conditionalDialogues:
   - condition:
-      conditionType: 1
+      conditionType: 3
       requiredProp: {fileID: 0}
-    dialogue: {fileID: 0}
-  primaryDialogue: {fileID: 0}
+      requiredFlag: cainMet
+    dialogue: {fileID: 11400000, guid: c47dccea575e723438619a11ec5a5684, type: 2}
+  itemInteractions: []
+  primaryDialogue: {fileID: 11400000, guid: 94211bdc5c6804f44b6533f524b631f0, type: 2}
+  setsFlag: cainMet
+  isWinCharacter: 1

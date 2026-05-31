@@ -465,6 +465,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3447b395242c1d245a0b1c10f39fbe79, type: 2}
   - {fileID: 11400000, guid: 56a154c1a14c6c849b74a17ccd04e191, type: 2}
   - {fileID: 11400000, guid: fdb6b80b8c8ed5041bd27b2bc1154a70, type: 2}
+  - {fileID: 11400000, guid: 4eea7189211b17d469a46ddbb5d23d5f, type: 2}
   roomImageDisplay: {fileID: 996064473}
   roomImageGrayscaleMaterial: {fileID: 0}
   roomImagesAlwaysGrayscale: 1

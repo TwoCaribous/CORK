@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f36378777d3334642a6f270b0c77a5fd, type: 3}
   m_Name: PlayerInventory
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Inventory.PlayerInventoryData
-  items:
-  - {fileID: 11400000, guid: 4693ac83a7426ce488a5c90dd8c91a55, type: 2}
+  items: []

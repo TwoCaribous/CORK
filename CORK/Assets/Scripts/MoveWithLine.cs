@@ -20,9 +20,9 @@ public class MoveWithLine : InputAction
         
         foreach (var conn in currentRoom.connections)
         {
-            if (conn.direction.ToLower() == target.ToLower() ||
-                conn.displayName.ToLower() == target.ToLower() ||
-                (conn.hasBeenVisited && conn.connectedRoom.roomName.ToLower() == target.ToLower()))
+            if (conn.displayName.ToLower() == target.ToLower() ||
+                (conn.hasBeenVisited && conn.connectedRoom.roomName.ToLower() == target.ToLower()) ||
+                (!conn.hasBeenVisited && string.IsNullOrEmpty(conn.displayName) && conn.connectedRoom.roomName.ToLower() == target.ToLower()))
             {
                 targetConnection = conn;
                 break;
@@ -77,17 +77,39 @@ public class MoveWithLine : InputAction
     
     private void ShowLineMessage(GameController controller, int tasksCompleted)
     {
+        bool task1 = controller.gameFlags.HasFlag("lineTask1Complete");
+        bool task2 = controller.gameFlags.HasFlag("lineTask2Complete");
+        bool task3 = controller.gameFlags.HasFlag("lineTask3Complete");
+
         switch (tasksCompleted)
         {
             case 0:
-                controller.LogStringWithReturn("There's a massive line stretching down the hallway. You can barely see Dr. Cain's door at the end. You need to find a way to clear this line.");
+                controller.LogStringWithReturn("There's a massive line stretching down the hallway. You can barely see Dr. Cain's door at the end.");
+                controller.LogStringWithReturn("A student near the back groans: \"I'd do anything for a fire drill right now.\"");
+                controller.LogStringWithReturn("Ahead of him, a girl checks her phone: \"Professor Garfield was supposed to call in a pizza party an hour ago. Where IS he?\"");
+                controller.LogStringWithReturn("Someone further up whispers: \"...yeah, I need Hacking Henry. Is he still in 195?\"");
                 break;
             case 1:
-                controller.LogStringWithReturn("The line is shorter now — about 2/3 of what it was. A few students gave up and left. The rest mutter something about how they'd rather burn alive than fail compilers.");
-                break;
             case 2:
-                controller.LogStringWithReturn("Only a handful of students remain in line. Almost there.");
+                LogQuestAwareLineProgress(controller, tasksCompleted, task1, task2, task3);
                 break;
         }
+    }
+
+    private void LogQuestAwareLineProgress(GameController controller, int tasksCompleted, bool task1, bool task2, bool task3)
+    {
+        var observations = new System.Collections.Generic.List<string>();
+
+        if (task1) observations.Add("The fire alarm cleared out about a third of the line. Students are still trickling back from the stairwell — but most of them just left.");
+        if (task2) observations.Add("After Professor Garfield finally came through on the pizza party, a wave of students peeled off to go find it. You can still smell garlic bread drifting down the hall.");
+        if (task3) observations.Add("Hacking Henry packed up and left the moment he got his energy drink, and half a dozen people behind him took that as their cue.");
+
+        string chosen = observations[Random.Range(0, observations.Count)];
+        controller.LogStringWithReturn(chosen);
+
+        if (tasksCompleted == 1)
+            controller.LogStringWithReturn("Still a long way to go.");
+        else
+            controller.LogStringWithReturn("Just a handful of stragglers remain. One more thing needs to happen.");
     }
 }

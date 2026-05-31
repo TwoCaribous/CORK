@@ -10,10 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8bdd3c1d79d6934793f96f094bf50e8, type: 3}
-  m_Name: Rockstar
+  m_Name: CosmosMenu
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
-  propName: Rockstar
-  description: There is a small red can sitting on the sidetable at the base of the
-    stairs. It's label reads "Rockstar Energy"
+  propName: cosmos pizza menu
+  description: A battered takeout menu for Cosmos Pizza, a local joint just off campus.
+    The number is handwritten on the front cover. Someone has dog-eared the garlic
+    knots page.
   canBeTaken: 1
+  takeMessage: You pick up the Cosmos menu. This has to be the one.
+  cantTakeMessage: 
   propImage: {fileID: 0}
+  hasBeenDiscovered: 0

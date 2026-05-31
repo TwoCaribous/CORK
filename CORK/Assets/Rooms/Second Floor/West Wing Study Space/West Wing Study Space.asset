@@ -18,7 +18,8 @@ MonoBehaviour:
     work or leisure.
   floorNumber: 2
   roomImage: {fileID: 4788192846909190740, guid: 8d4604d155b0df34e9452e7acbe23caf, type: 3}
-  props: []
+  props:
+  - {fileID: 11400000, guid: 0756bf129e8614a41b06641847c9925c, type: 2}
   characters: []
   connections:
   - connectedRoom: {fileID: 11400000, guid: 87d884ba9e5ff5c4b8225a23790f51df, type: 2}

@@ -29,7 +29,7 @@ MonoBehaviour:
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: There is a glass door leading to what looks like a bar.
-    displayName: Bar Door
+    displayName: Bar
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 7245402dffdaa0446abd954223a66f85, type: 2}
     direction: Left
@@ -39,5 +39,5 @@ MonoBehaviour:
     hasBeenVisited: 0
     doorDescription: There is a glass door. On the other side you see a large open
       room with stairs and elevators. Some people are in there.
-    displayName: Lobby Door
+    displayName: Lobby
     requiredKey: {fileID: 11400000, guid: 4693ac83a7426ce488a5c90dd8c91a55, type: 2}

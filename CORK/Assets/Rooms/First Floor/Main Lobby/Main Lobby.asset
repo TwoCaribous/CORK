@@ -19,12 +19,11 @@ MonoBehaviour:
   floorNumber: 1
   roomImage: {fileID: 7360981783615143082, guid: bce24e05f0cb79a4ea85e48583743f8e, type: 3}
   props:
-  - {fileID: 11400000, guid: fc8d28590a13adc4688ad14f360232d4, type: 2}
-  - {fileID: 11400000, guid: 9d2ed01c836d94146828a90b4a27800d, type: 2}
-  - {fileID: 11400000, guid: cb0d253a63246034e8cbb1d4838a8b47, type: 2}
+  - {fileID: 11400000, guid: b47dd934da8d0f2488e587b4250d8401, type: 2}
   characters:
   - {fileID: 11400000, guid: 64ffb18766e937e49a607bbbc39ec7df, type: 2}
   - {fileID: 11400000, guid: 121e5a6348555064bbcbcd0612cd3979, type: 2}
+  - {fileID: 11400000, guid: 3b69ff55fc145c743a87574a1a5931dd, type: 2}
   connections:
   - connectedRoom: {fileID: 11400000, guid: 49728963a222ef646bcba03ff23683b8, type: 2}
     direction: South

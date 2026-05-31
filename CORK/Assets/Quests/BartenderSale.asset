@@ -10,12 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7a93f7b503a8114eb425fd6a5f0a6ec, type: 3}
-  m_Name: Conversation Before getting billy a beer
+  m_Name: BartenderSale
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Dialogue.DialogueEntry
   lines:
-  - speakerName: Billy
-    text: Hey Whats up! My name name is Billy Two Step and I loovvve beer
-  - speakerName: Billy
-    text: I just dont have NO MONEY!!!
-  - speakerName: You
-    text: I just dont have NO MONEY!!!
+  - speakerName: Bartender
+    text: You still here?

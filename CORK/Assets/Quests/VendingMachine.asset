@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ad6afad8740d549a5ddc72dddc2ad6, type: 3}
+  m_Name: VendingMachine
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropContainerData
+  propName: vending machine
+  description: 'A battered vending machine humming against the wall. Behind the scratched
+    glass you can see a single can of Rockstar Energy in the bottom slot. The price
+    panel reads: $1.00.'
+  canBeTaken: 0
+  takeMessage: 
+  cantTakeMessage: It's bolted to the wall.
+  propImage: {fileID: 0}
+  hasBeenDiscovered: 0
+  isOpen: 0
+  isLocked: 1
+  lockedMessage: The machine is coin-locked. You'd need a dollar.
+  containedProps:
+  - {fileID: 11400000, guid: 816e8fb90e8af01409ce09b6b3984483, type: 2}
+  requiredKey: {fileID: 11400000, guid: 8c20b854d61a5534982ce66d2bfec177, type: 2}
