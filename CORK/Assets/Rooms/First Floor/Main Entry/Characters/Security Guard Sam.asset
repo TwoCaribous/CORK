@@ -26,3 +26,5 @@ MonoBehaviour:
     dialogue: {fileID: 11400000, guid: f8260661f665d774b9f72dc3f056701c, type: 2}
   itemInteractions: []
   primaryDialogue: {fileID: 11400000, guid: adbe9b881bae7114487f0f298877a2ee, type: 2}
+  setsFlag: 
+  isWinCharacter: 0

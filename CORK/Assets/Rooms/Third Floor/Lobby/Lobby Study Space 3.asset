@@ -19,7 +19,8 @@ MonoBehaviour:
   floorNumber: 3
   roomImage: {fileID: -3396390944389209629, guid: 521b7eb8a4b6b364ab6e3173b91c4fbc, type: 3}
   props: []
-  characters: []
+  characters:
+  - {fileID: 11400000, guid: da4c9c9f2389a1b4a86bc5cde1aa8b55, type: 2}
   connections:
   - connectedRoom: {fileID: 11400000, guid: 8892f715e8d88564f98af853872a130f, type: 2}
     direction: Elevator

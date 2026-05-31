@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8bdd3c1d79d6934793f96f094bf50e8, type: 3}
+  m_Name: DominosMenu
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
+  propName: Domino's Menu
+  description: "A glossy tri-fold menu from the Domino's near here. Someone has circled
+    the pepperoni pizza. A bit basic but I don't judge. This is a chain \u2014 not
+    the local place."
+  canBeTaken: 1
+  takeMessage: You take the Domino's menu. You're not sure why this is in a classroom.
+  cantTakeMessage: 
+  propImage: {fileID: 0}
+  hasBeenDiscovered: 0

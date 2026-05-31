@@ -38,6 +38,13 @@ namespace CORK.Data.Characters
                  "Acts as the default conversation before any story conditions are met.")]
         public DialogueEntry primaryDialogue;
 
+        [Header("On Talk")]
+        [Tooltip("Optional flag to set on GameFlags whenever the player talks to this character. Leave empty if no flag is needed.")]
+        public string setsFlag;
+
+        [Tooltip("If true, talking to this character for the first time displays a game-complete congratulations banner.")]
+        public bool isWinCharacter;
+
         // ── Future expansion stubs ───────────────────────────────────────────────
         // Additional condition types to add to DialogueConditionType as systems grow:
         //

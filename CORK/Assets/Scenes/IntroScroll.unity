@@ -685,8 +685,8 @@ Camera:
   m_GameObject: {fileID: 961739749}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -966,6 +966,7 @@ MonoBehaviour:
 
 
 
+    THE CATALYST BUILDING
 
 
     EASTERN WASHINGTON
@@ -974,10 +975,13 @@ MonoBehaviour:
 
 
 
-    SPRING QUARTER
+    SPRING
+    QUARTER
 
-    FINAL
-    WEEK
+    FINAL WEEK
+
+
+
 
 
 
@@ -985,19 +989,19 @@ MonoBehaviour:
 
     Four years of deadlines,
 
-    all-nighters, and poor decisions
+    all-nighters,
+    and poor decisions
 
-    have
-    led to this moment.
-
-
-
-    Graduation is one week away.
+    have led to this moment.
 
 
 
-    There is, however,
-    a problem.
+    Graduation is one week
+    away.
+
+
+
+    There is, however, a problem.
 
 
 
@@ -1005,62 +1009,62 @@ MonoBehaviour:
 
 
 
-    Doctor Cain has submitted
+    Doctor
+    Cain has submitted
 
-    final
-    exam grades and the numbers
+    final exam grades and the numbers
 
-    are not in your favor.
+    are not in your
+    favor.
 
 
 
     There is one option:
 
-    reach
-    Cain''s office,
+    reach Cain''s office,
 
-    look him in the eye,
+    look him in
+    the eye,
 
     and convince him to change it.
 
 
 
-    Simple
-    enough.
+    Simple enough.
 
 
 
-    Except the line outside
+    Except
+    the line outside
 
     his door stretches down the
 
-    hallway,
-    around the corner,
+    hallway, around the corner,
 
-    and into what appears to be
+    and
+    into what appears to be
 
-    a second hallway you
-    have
+    a second hallway you have
 
     never noticed before.
 
 
 
-    Nobody is moving.
+    Nobody
+    is moving.
 
 
 
-    Nobody looks
-    like they are
+    Nobody looks like they are
 
     going to move anywhere soon.
 
 
 
-    You are going to need
+    You
+    are going to need
 
-    to
-    think creatively.
+    to think creatively.
 
 
     Good luck, graduate.'

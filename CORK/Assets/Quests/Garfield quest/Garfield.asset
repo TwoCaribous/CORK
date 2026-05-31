@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b59d0aa06ed27e4d8175e82336828e1, type: 3}
+  m_Name: Garfield
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.EssentialCharacterData
+  characterName: Professor Garfield
+  description: A round, frazzled man in a corduroy blazer paces near the elevator,
+    muttering to himself and checking his pockets repeatedly.
+  characterType: 0
+  portrait: {fileID: 0}
+  hasBeenMet: 0
+  conditionalDialogues:
+  - condition:
+      conditionType: 3
+      requiredProp: {fileID: 0}
+      requiredFlag: lineTask2Complete
+    dialogue: {fileID: 11400000, guid: 9ce57d7bcef927543a42c1bbe8e7a056, type: 2}
+  itemInteractions:
+  - expectedItem: {fileID: 11400000, guid: 2975dc960d37ff948aa2eba16ab00366, type: 2}
+    response: {fileID: 11400000, guid: cfe380d3a87e60c4ebcc2681352df6db, type: 2}
+    setsFlag: 
+    awardsItem: {fileID: 0}
+  - expectedItem: {fileID: 11400000, guid: f5d1439aef9f26e4badc23207c7b660f, type: 2}
+    response: {fileID: 11400000, guid: 429b46f705888e74385db532c7977daf, type: 2}
+    setsFlag: 
+    awardsItem: {fileID: 0}
+  - expectedItem: {fileID: 11400000, guid: 7681336cece26204e8f593d3e371d685, type: 2}
+    response: {fileID: 11400000, guid: c89853380c361d74baa747c756adfdd2, type: 2}
+    setsFlag: lineTask2Complete
+    awardsItem: {fileID: 0}
+  primaryDialogue: {fileID: 11400000, guid: 3bb16620ac2025c4b8c33f68dde724ee, type: 2}

@@ -16,7 +16,10 @@ MonoBehaviour:
   description: Study space.
   floorNumber: 3
   roomImage: {fileID: 357787960701677753, guid: ed1b69d3d7e51044d94f0468353be9bd, type: 3}
-  props: []
+  props:
+  - {fileID: 11400000, guid: faf2d1bd015987b4e8a9fb29129ea050, type: 2}
+  - {fileID: 11400000, guid: 1db9a3a58a44901468f05e89b05d8bc4, type: 2}
+  - {fileID: 11400000, guid: 8c20b854d61a5534982ce66d2bfec177, type: 2}
   characters: []
   connections:
   - connectedRoom: {fileID: 11400000, guid: 8d98bab15e87d6a4694bc2ccc3b636e6, type: 2}

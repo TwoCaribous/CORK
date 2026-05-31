@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Bobby Security Guy
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.RandomCharacterData
   characterName: Security Guard
-  description: A bald man dressed in security attire sits atop a stool
+  description: A bald man dressed in security attire stands near the stairs
   characterType: 1
   portrait: {fileID: 0}
+  hasBeenMet: 0
   ambientLines:
   - speakerName: Bobby
-    text: 'I hear tensions are rising between the Computer Science and Design students...
-      I hope it doesnt end badly '
+    text: 'That line on three is a fire hazard if you ask me. One pull of that alarm
+      and the whole floor clears out in under a minute. Not that anyone would ever
+      do that, of course. '

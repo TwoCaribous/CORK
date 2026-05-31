@@ -18,8 +18,7 @@ MonoBehaviour:
     Spokane.  '
   floorNumber: 2
   roomImage: {fileID: 4581212182703318551, guid: c00153f2de41f074d9c544826dcc2f02, type: 3}
-  props:
-  - {fileID: 11400000, guid: bb110f760d1473541be161b1cb774364, type: 2}
+  props: []
   characters:
   - {fileID: 11400000, guid: b2b67124f90484f458c3db79a0d52224, type: 2}
   connections:

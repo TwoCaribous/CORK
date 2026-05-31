@@ -19,7 +19,8 @@ MonoBehaviour:
   floorNumber: 1
   roomImage: {fileID: 0}
   props: []
-  characters: []
+  characters:
+  - {fileID: 11400000, guid: 10caa29c11cee8a4eb58935e720d20e8, type: 2}
   connections:
   - connectedRoom: {fileID: 11400000, guid: cc03f6f00a5ae7a45b4fbf1c9e129560, type: 2}
     direction: West
@@ -29,3 +30,4 @@ MonoBehaviour:
     hasBeenVisited: 0
     doorDescription: There is a door leading to the hallway
     displayName: Hallway
+    requiredKey: {fileID: 0}

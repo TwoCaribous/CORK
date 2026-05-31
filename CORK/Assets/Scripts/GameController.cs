@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
 
     PropPickupSystem propPickupSystem;
     List<string> actionLog = new List<string>();
+    const int maxLogLines = 80;
 
     // ── World state snapshot structs ─────────────────────────────────────────────
     struct PropSnapshot
@@ -158,24 +159,26 @@ public class GameController : MonoBehaviour
             "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n" +
             "  look                        - describe the room and anyone in it\n" +
             "  search                      - look for items in the room\n" +
-            "  move                        - list exits\n" +
-            "  move [exit]                 - travel to an exit (e.g. 'move glass door')\n" +
+            "  move [exit]                 - travel to an exit. You must use room name (e.g. 'move lobby')\n" +
             "  inspect [thing]             - examine something closely\n" +
             "  talk [person]               - talk to someone nearby\n" +
             "  take [thing]                - pick something up\n" +
             "  open [thing]                - open a container\n" +
-            "  give [item] to [person]     - hand something to someone\n" +
-            "  use [item] on [thing]       - use an item on something\n" +
+            "  give [item] to [person]     - hand something to someone. You must use the exact name (e.g. 'give key to guard')\n" +
+            "  use [item] on [thing]       - use an item on something (e.g. 'use eagle card on lobby')\n" +
             "  drop [item]                 - drop something from your inventory\n" +
             "  inventory                   - list what you're carrying\n" +
             "  inventory [item]            - examine a carried item\n" +
+            "  pull [thing]                - pull something in the environment\n" +
             "  help                        - show this list\n" +
+            "  exit                        - quit to the start screen\n" +
             "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━";
     }
 
     public void DisplayLoggedText()
     {
-        string logAsText = string.Join("\n", actionLog.ToArray());
+        int start = Mathf.Max(0, actionLog.Count - maxLogLines);
+        string logAsText = string.Join("\n", actionLog.GetRange(start, actionLog.Count - start).ToArray());
         displayText.text = logAsText;
     }
 

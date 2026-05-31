@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7a93f7b503a8114eb425fd6a5f0a6ec, type: 3}
-  m_Name: Henry Before Hacking
+  m_Name: Has_Dominos
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Dialogue.DialogueEntry
   lines:
-  - speakerName: Henry
-    text: '"They call me Hacking Henry. They don''t say that lightly though. I can
-      hack into anything. But I''ll only red hat with a few drinks in me..."'
-  - speakerName: Henry
-    text: '"I could even hack canvas... But I cant see why anyone would want me to
-      do that."'
+  - speakerName: Professor Garfield
+    text: Domino's?! Do I LOOK like I want cardboard? I said COSMOS. It's the local
+      pizza place, not a fast food chain!
+  - speakerName: Professor Garfield
+    text: "...Actually, now that I think about it, I may have also been in the Cocktail
+      Bar yesterday. I sometimes mark papers there when I need \u2014 ambiance. Check
+      around the bar, would you?"
