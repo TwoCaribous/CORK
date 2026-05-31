@@ -17,7 +17,8 @@ MonoBehaviour:
     to the north and south.
   floorNumber: 2
   roomImage: {fileID: 6050344308790531871, guid: 56b7e90af40f66441887b58b3040346b, type: 3}
-  props: []
+  props:
+  - {fileID: 11400000, guid: dcb1da3cbb590314a84b9a7cf3476f23, type: 2}
   characters: []
   connections:
   - connectedRoom: {fileID: 11400000, guid: 8892f715e8d88564f98af853872a130f, type: 2}

@@ -35,8 +35,8 @@ MonoBehaviour:
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 73b490d238d5ef748af5c7a272f63deb, type: 2}
     direction: Front
-    isLocked: 0
-    lockedMessage: 
+    isLocked: 1
+    lockedMessage: 'You''re not a design student, you shall not pass. '
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: Another entrance to the design lab.
@@ -44,7 +44,7 @@ MonoBehaviour:
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 80457d85004fde049961e7c974201e99, type: 2}
     direction: Right
-    isLocked: 0
+    isLocked: 1
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0

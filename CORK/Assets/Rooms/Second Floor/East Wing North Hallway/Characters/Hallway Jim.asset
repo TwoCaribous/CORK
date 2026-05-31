@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c885fc49a73507941b5d7d83e8ee339b, type: 3}
-  m_Name: James
+  m_Name: Hallway Jim
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.RandomCharacterData
-  characterName: James
-  description: 'Another student sits in a wide lounge chair working on his laptop. '
+  characterName: Jim
+  description: You see a student on her phone outside of 215.
   characterType: 1
   portrait: {fileID: 0}
   hasBeenMet: 0
   ambientLines:
-  - speakerName: James
-    text: '"I never cared much for pop music."'
-  - speakerName: James
-    text: '"I never cared much for .... MegaDeth."'
+  - speakerName: Jim
+    text: '"Yeah, my mother named me Jim, get over it." '
+  - speakerName: Jim
+    text: '"A female Jim is not an easy life pal." '
+  - speakerName: Jim
+    text: '"Any more questions wise guy." '

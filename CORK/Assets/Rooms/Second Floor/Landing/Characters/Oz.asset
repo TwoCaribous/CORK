@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c885fc49a73507941b5d7d83e8ee339b, type: 3}
   m_Name: Oz
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.RandomCharacterData
-  characterName: Oz
+  characterName: Oswald
   description: 'You see a guy working on his laptop at the back left of the space.
     He seems to be listening to Black Sabbath which you can hear leaking through
     his cheap earphones. '
@@ -27,4 +27,8 @@ MonoBehaviour:
   - speakerName: Oz
     text: '"I don''t know whats happening, my heads all torn inside"'
   - speakerName: Oz
-    text: '"Peaople say I''m heavy, they don''t know what I hide"'
+    text: '"Peaple say I''m heavy, they don''t know what I hide"'
+  - speakerName: Oz
+    text: '"Don''t believe in violence, I don''t even believe in peace"'
+  - speakerName: Oz
+    text: '"I just believe in myself because no one else is true"'

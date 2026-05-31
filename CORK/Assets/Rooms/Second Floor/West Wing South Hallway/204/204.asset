@@ -16,7 +16,8 @@ MonoBehaviour:
   description: 'An Electrical Engineering Lab. '
   floorNumber: 2
   roomImage: {fileID: 15957319104565769, guid: a083ada160772f84faac260f9f493dbf, type: 3}
-  props: []
+  props:
+  - {fileID: 11400000, guid: b0d8a5a66e8b5b6469a3adff2b742cfb, type: 2}
   characters: []
   connections:
   - connectedRoom: {fileID: 11400000, guid: 51278795809420c4fa32e2acbe23b700, type: 2}

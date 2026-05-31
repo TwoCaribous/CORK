@@ -17,7 +17,8 @@ MonoBehaviour:
     Floor Main Lobby.
   floorNumber: 2
   roomImage: {fileID: 2915535775628863619, guid: cfc67e5892bbb074d85946f2efd14681, type: 3}
-  props: []
+  props:
+  - {fileID: 11400000, guid: 098b74c1be0db804d8df1cf3948cb67e, type: 2}
   characters: []
   connections:
   - connectedRoom: {fileID: 11400000, guid: c788f5ff1951908489d34a630b8b3b56, type: 2}

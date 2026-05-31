@@ -21,7 +21,7 @@ MonoBehaviour:
   conditionalDialogues:
   - condition:
       conditionType: 1
-      requiredProp: {fileID: 11400000, guid: 4a18b3a0fb56a184fbf7842f4df15f58, type: 2}
+      requiredProp: {fileID: 11400000, guid: b0d8a5a66e8b5b6469a3adff2b742cfb, type: 2}
       requiredFlag: 
     dialogue: {fileID: 11400000, guid: 37e7151a2cda10f47828719704cf1c1c, type: 2}
   itemInteractions:

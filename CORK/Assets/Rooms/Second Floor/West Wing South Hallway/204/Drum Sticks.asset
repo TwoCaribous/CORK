@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8bdd3c1d79d6934793f96f094bf50e8, type: 3}
   m_Name: Drum Sticks
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
-  propName: Drum Sticks
-  description: A loose set of wooden drumsticks
+  propName: Bill's Sticks
+  description: 'A set of well used wooden drumsticks. '
   canBeTaken: 1
-  takeMessage: 'You found Bll''s sticks, best return them. '
+  takeMessage: Nice, better return them to bill
   cantTakeMessage: 
   propImage: {fileID: 0}
   hasBeenDiscovered: 0

@@ -41,8 +41,8 @@ MonoBehaviour:
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: aebfd17c0c47afd4bbe98182d17a3903, type: 2}
     direction: Left
-    isLocked: 0
-    lockedMessage: 
+    isLocked: 1
+    lockedMessage: It looks like there is a class going on, best not to disturn them.
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: 'A normal looking classroom door. '
@@ -50,8 +50,8 @@ MonoBehaviour:
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 633773a95d8246e48aee8cdd76dc0e8e, type: 2}
     direction: Left
-    isLocked: 0
-    lockedMessage: 
+    isLocked: 1
+    lockedMessage: It looks like there is a class going on, best not to disturn them.
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: 'A normal looking classroom door. '
@@ -59,8 +59,8 @@ MonoBehaviour:
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 3d5cbf9105a337c45b38da76bb76be3d, type: 2}
     direction: Left
-    isLocked: 0
-    lockedMessage: 
+    isLocked: 1
+    lockedMessage: It looks like there is a class going on, best not to disturn them.
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: 'A normal looking classroom door. '
