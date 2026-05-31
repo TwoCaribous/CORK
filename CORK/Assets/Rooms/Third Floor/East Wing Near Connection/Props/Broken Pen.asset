@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8bdd3c1d79d6934793f96f094bf50e8, type: 3}
-  m_Name: Banana Peel
+  m_Name: Broken Pen
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
-  propName: Banana Peel
-  description: Old banana peel that has been left behind. Why this has been left
-    in the fridge, without the banana, is anyone's guess.
+  propName: Broken Pen
+  description: A broken pen lies on the floor.
   canBeTaken: 1
-  takeMessage: You take the banana peel, being careful not to drop it and take a
-    nasty fall.
+  takeMessage: You carefully pick up the fragments of the broken pen, and drop them
+    into your bag.
   cantTakeMessage: 
   propImage: {fileID: 0}
   hasBeenDiscovered: 0

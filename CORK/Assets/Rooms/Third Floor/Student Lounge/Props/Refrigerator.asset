@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68ad6afad8740d549a5ddc72dddc2ad6, type: 3}
   m_Name: Refrigerator
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropContainerData
-  propName: Refridgerator
-  description: A refridgerator sits in the corner of the student lounge. Several
-    items can be found inside.
+  propName: Refrigerator
+  description: A refrigerator sits in the corner of the student lounge. Several items
+    can be found inside.
   canBeTaken: 0
   takeMessage: 
   cantTakeMessage: It would be humorous to watch, but the fridge is a bit heavy to
-    take with you.
+    take with you. Your bag will have to suffice.
   propImage: {fileID: 0}
   hasBeenDiscovered: 0
   isOpen: 0
