@@ -16,7 +16,8 @@ MonoBehaviour:
   description: A Desing Classroom, littered with apple computers. Enemy Territory.
   floorNumber: 2
   roomImage: {fileID: 0}
-  props: []
+  props:
+  - {fileID: 11400000, guid: 4a18b3a0fb56a184fbf7842f4df15f58, type: 2}
   characters: []
   connections:
   - connectedRoom: {fileID: 11400000, guid: cef6fde523c1ab044b1ff1643ac93393, type: 2}
