@@ -108,5 +108,16 @@ public class Give : InputAction
         controller.playerInventory.RemoveItem(item);
         foreach (DialogueLine line in match.response.lines)
             controller.LogStringWithReturn(line.speakerName + ": " + line.text);
+
+        // Award an item back to the player if this interaction specifies one
+        if (match.awardsItem != null)
+        {
+            controller.playerInventory.AddItem(match.awardsItem);
+            controller.LogStringWithReturn("You receive: " + match.awardsItem.propName + ".");
+        }
+
+        // Set the flag declared on this interaction, if any
+        if (!string.IsNullOrEmpty(match.setsFlag))
+            controller.gameFlags.SetFlag(match.setsFlag);
     }
 }

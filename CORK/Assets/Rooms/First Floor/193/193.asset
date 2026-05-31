@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: 193
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
   roomName: 193
-  description: 'You are in a small classroom with many desks and chairs facing a
-    whiteboard. '
+  description: "You are in a small classroom with many desks and chairs facing a
+    whiteboard. Papers and notes litter a few of the desks \u2014 it looks like someone
+    was grading in here recently."
   floorNumber: 1
   roomImage: {fileID: 0}
-  props: []
+  props:
+  - {fileID: 11400000, guid: 2975dc960d37ff948aa2eba16ab00366, type: 2}
   characters: []
   connections:
   - connectedRoom: {fileID: 11400000, guid: cc03f6f00a5ae7a45b4fbf1c9e129560, type: 2}
@@ -28,3 +30,4 @@ MonoBehaviour:
     hasBeenVisited: 0
     doorDescription: There is a door leading to the hallway
     displayName: Hallway
+    requiredKey: {fileID: 0}

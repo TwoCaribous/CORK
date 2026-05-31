@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Sam After Keycard
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Dialogue.DialogueEntry
   lines:
-  - speakerName: Security Sam
+  - speakerName: Sam
     text: '"Go on right through! Have a nice time in class."'

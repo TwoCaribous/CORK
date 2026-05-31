@@ -19,5 +19,11 @@ namespace CORK.Data.Characters
 
         [Tooltip("The dialogue the character speaks when handed this item.")]
         public DialogueEntry response;
+
+        [Tooltip("Optional flag to activate on GameFlags when this interaction fires. Leave empty if no flag is needed.")]
+        public string setsFlag;
+
+        [Tooltip("Optional item to add to the player's inventory when this interaction fires (e.g. a bartender handing something back). Leave empty if nothing is awarded.")]
+        public PropData awardsItem;
     }
 }

@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Fire Alarm
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
   propName: Fire Alarm
-  description: A standard red pull-down fire alarm.
+  description: 'A red pull station mounted to the wall beside the stairwell. The
+    label reads: PULL IN CASE OF EMERGENCY. You glance down the hallway at the crowd
+    of students. The building would be empty in thirty seconds.'
   canBeTaken: 0
   takeMessage: 
-  cantTakeMessage: 
+  cantTakeMessage: It's bolted to the wall. But it does have a very pullable handle.
   propImage: {fileID: 0}
   hasBeenDiscovered: 0

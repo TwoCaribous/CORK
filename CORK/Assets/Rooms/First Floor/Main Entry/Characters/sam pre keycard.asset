@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: sam pre keycard
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Dialogue.DialogueEntry
   lines:
-  - speakerName: Security Sam
+  - speakerName: Sam
     text: '"Gonna need an Eagle Card if you want to get in."'

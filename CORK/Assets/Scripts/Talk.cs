@@ -57,6 +57,19 @@ public class Talk : InputAction
             {
                 controller.LogStringWithReturn("They don't seem to want to talk.");
             }
+
+            if (!string.IsNullOrEmpty(essential.setsFlag))
+                controller.gameFlags.SetFlag(essential.setsFlag);
+
+            if (essential.isWinCharacter && newMeeting)
+            {
+                controller.LogRawStringWithReturn("");
+                controller.LogStringWithReturn("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
+                controller.LogStringWithReturn("  CONGRATULATIONS — You made it!");
+                controller.LogStringWithReturn("  Your grade has been changed.");
+                controller.LogStringWithReturn("  Thanks for playing CORK.");
+                controller.LogStringWithReturn("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
+            }
         }
         else if (found is RandomCharacterData random)
         {
