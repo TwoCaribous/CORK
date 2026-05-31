@@ -43,8 +43,8 @@ MonoBehaviour:
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 80457d85004fde049961e7c974201e99, type: 2}
     direction: Right
-    isLocked: 0
-    lockedMessage: 
+    isLocked: 1
+    lockedMessage: 'You''re not a design student, you shall not pass. '
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: ' '
@@ -52,8 +52,8 @@ MonoBehaviour:
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 1ebf0130a4f875648b1e44269a0f37ca, type: 2}
     direction: Right
-    isLocked: 0
-    lockedMessage: 
+    isLocked: 1
+    lockedMessage: 'You''re not a design student, you shall not pass. '
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: ' '
@@ -61,8 +61,8 @@ MonoBehaviour:
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: c223d094299ec8b4daab58aefd468f39, type: 2}
     direction: Right
-    isLocked: 0
-    lockedMessage: 
+    isLocked: 1
+    lockedMessage: 'You''re not a design student, you shall not pass. '
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: ' '
@@ -70,8 +70,8 @@ MonoBehaviour:
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 1f7256cbf5110bd498f59c20bd90c3cc, type: 2}
     direction: Right
-    isLocked: 0
-    lockedMessage: 
+    isLocked: 1
+    lockedMessage: 'You''re not a design student, you shall not pass. '
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: ' '

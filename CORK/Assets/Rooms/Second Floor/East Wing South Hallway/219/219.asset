@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: 219
   m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Rooms.RoomData
   roomName: 219
-  description: A normal looking computer lab.
+  description: 'A normal looking computer lab. There is something extremely familiar
+    about the classroom. '
   floorNumber: 2
   roomImage: {fileID: 0}
-  props: []
+  props:
+  - {fileID: 11400000, guid: 6154af7e204212a4596718217bed9da5, type: 2}
   characters: []
   connections:
   - connectedRoom: {fileID: 11400000, guid: 377b6040709ae424dbe49d1f7fe2257b, type: 2}

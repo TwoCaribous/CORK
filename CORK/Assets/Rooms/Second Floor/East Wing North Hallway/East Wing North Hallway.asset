@@ -18,7 +18,8 @@ MonoBehaviour:
   floorNumber: 2
   roomImage: {fileID: -6788894772661965019, guid: 0c7359ef92cfc0f4a86d06862ae07f40, type: 3}
   props: []
-  characters: []
+  characters:
+  - {fileID: 11400000, guid: ed8e0c1148acc354694f727b78a0b536, type: 2}
   connections:
   - connectedRoom: {fileID: 11400000, guid: 83aa6b041c93bc446b3a05f501c201b6, type: 2}
     direction: 'Back '

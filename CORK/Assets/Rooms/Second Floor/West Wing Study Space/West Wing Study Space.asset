@@ -19,8 +19,10 @@ MonoBehaviour:
   floorNumber: 2
   roomImage: {fileID: 4788192846909190740, guid: 8d4604d155b0df34e9452e7acbe23caf, type: 3}
   props:
-  - {fileID: 11400000, guid: 0756bf129e8614a41b06641847c9925c, type: 2}
-  characters: []
+  - {fileID: 11400000, guid: d3d598c6406e0494b8fcc133009b2828, type: 2}
+  - {fileID: 11400000, guid: 7d322e70854732b429895e57cff679ac, type: 2}
+  characters:
+  - {fileID: 11400000, guid: 41044c0188dd4da4799ff811fd71bd56, type: 2}
   connections:
   - connectedRoom: {fileID: 11400000, guid: 87d884ba9e5ff5c4b8225a23790f51df, type: 2}
     direction: Left
@@ -33,8 +35,8 @@ MonoBehaviour:
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 73b490d238d5ef748af5c7a272f63deb, type: 2}
     direction: Front
-    isLocked: 0
-    lockedMessage: 
+    isLocked: 1
+    lockedMessage: 'You''re not a design student, you shall not pass. '
     isHidden: 0
     hasBeenVisited: 0
     doorDescription: Another entrance to the design lab.
@@ -42,7 +44,7 @@ MonoBehaviour:
     requiredKey: {fileID: 0}
   - connectedRoom: {fileID: 11400000, guid: 80457d85004fde049961e7c974201e99, type: 2}
     direction: Right
-    isLocked: 0
+    isLocked: 1
     lockedMessage: 
     isHidden: 0
     hasBeenVisited: 0

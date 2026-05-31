@@ -18,7 +18,8 @@ MonoBehaviour:
     southern hallways trajectory. '
   floorNumber: 2
   roomImage: {fileID: 4108389532859217246, guid: ef323f09e47bf744ca6f28fc455f4da2, type: 3}
-  props: []
+  props:
+  - {fileID: 11400000, guid: fc5b7e9039001ea42b4f1d21cfff1591, type: 2}
   characters: []
   connections:
   - connectedRoom: {fileID: 11400000, guid: ac71913d1a3677d4fb49ea9c7482379a, type: 2}

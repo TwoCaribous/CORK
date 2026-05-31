@@ -16,8 +16,11 @@ MonoBehaviour:
   description: 'You see a small study space with a few chairs and desks to your left. '
   floorNumber: 2
   roomImage: {fileID: 600743290566950935, guid: f1d8b2a0e4860eb4984a93373555a6b6, type: 3}
-  props: []
-  characters: []
+  props:
+  - {fileID: 11400000, guid: 9d90b078032ce324a935b88bdc26ea40, type: 2}
+  - {fileID: 11400000, guid: f4f85eef7a7ad514485c21a535170ec6, type: 2}
+  characters:
+  - {fileID: 11400000, guid: 22d76b682536ed94a9e488ca7eeb0d48, type: 2}
   connections:
   - connectedRoom: {fileID: 11400000, guid: 70cbe71c19073084f9229c6631726c5d, type: 2}
     direction: Back

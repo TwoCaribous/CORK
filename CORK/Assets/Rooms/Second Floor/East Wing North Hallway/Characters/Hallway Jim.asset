@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c885fc49a73507941b5d7d83e8ee339b, type: 3}
+  m_Name: Hallway Jim
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.RandomCharacterData
+  characterName: Jim
+  description: You see a student on her phone outside of 215.
+  characterType: 1
+  portrait: {fileID: 0}
+  hasBeenMet: 0
+  ambientLines:
+  - speakerName: Jim
+    text: '"Yeah, my mother named me Jim, get over it." '
+  - speakerName: Jim
+    text: '"A female Jim is not an easy life pal." '
+  - speakerName: Jim
+    text: '"Any more questions wise guy." '
