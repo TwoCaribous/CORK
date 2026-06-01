@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8bdd3c1d79d6934793f96f094bf50e8, type: 3}
+  m_Name: Printer
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
+  propName: Printer
+  description: 'A large printer sits at the far wall of the lobby. You''ve thought
+    about printing out copies of your ass, but that will have to remain an errant
+    fantasy for now. '
+  canBeTaken: 0
+  takeMessage: 
+  cantTakeMessage: There's definitely no way it's gonna get lifted by you alone,
+    or fit into the bag. Who are you, Mary Poppins?
+  propImage: {fileID: 0}
+  hasBeenDiscovered: 0

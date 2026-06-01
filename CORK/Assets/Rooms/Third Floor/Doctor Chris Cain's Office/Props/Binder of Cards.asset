@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8bdd3c1d79d6934793f96f094bf50e8, type: 3}
+  m_Name: Binder of Cards
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
+  propName: Binder of Cards
+  description: Sitting on a shelf is a binder of Magic the Gathering cards.
+  canBeTaken: 0
+  takeMessage: 
+  cantTakeMessage: 'Cain shoots you a glance of anger at your mere thought of taking
+    the cards for yourself. You haven''t even began to step towards them, but he
+    seemed like he knew exactly what you were trying to do. Best not entertain any
+    more thoughts of taking them. '
+  propImage: {fileID: 0}
+  hasBeenDiscovered: 0

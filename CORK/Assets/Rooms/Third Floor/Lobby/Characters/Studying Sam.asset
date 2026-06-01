@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c885fc49a73507941b5d7d83e8ee339b, type: 3}
+  m_Name: Studying Sam
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Characters.RandomCharacterData
+  characterName: Studying Sam
+  description: Studying Sam sits in one of the chairs, doing, well, some more studying
+    it seems.
+  characterType: 1
+  portrait: {fileID: 0}
+  hasBeenMet: 1
+  ambientLines:
+  - speakerName: 
+    text: 'Hey, do you have any-
+
+      Studying Sam: Look, I never have any time
+      for anything besides studying, you know this already. Please leave me be.'
+  - speakerName: 
+    text: 'Why is your name also Sam?
+
+      Studying Sam: It''s a common name, brainiac.
+      And no, before you ask, I''m not related to any other Sams on campus. I''m
+      just here to study.'
+  - speakerName: 
+    text: 'Hey, do you know anything about-
+
+      Studying Sam: You''re gonna ask
+      me about something not related to me studying. You don''t need to finish that
+      sentence, because I can''t tell you.'
+  - speakerName: 
+    text: 'You wouldn''t know anything about any flyers, would you?
+
+      Studying
+      Sam: I really have no idea what you''re talking about, all I do is study.
+
+      :
+      Yeah I have no idea either. Just something that crossed my mind, it''s all
+      fine, I think it was-
+
+      Studying Sam: Please just leave me alone.'

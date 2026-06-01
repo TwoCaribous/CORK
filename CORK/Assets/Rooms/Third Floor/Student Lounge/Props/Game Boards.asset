@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8bdd3c1d79d6934793f96f094bf50e8, type: 3}
+  m_Name: Game Boards
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
+  propName: Game Boards
+  description: An assortment of game boards stacked on top of one another in a bookshelf.
+  canBeTaken: 0
+  takeMessage: 
+  cantTakeMessage: You ponder taking out Battleship, but it sits at the bottom of
+    a rather large stack of game boards. Taking it would likely spill everything
+    and make a mess.
+  propImage: {fileID: 0}
+  hasBeenDiscovered: 0

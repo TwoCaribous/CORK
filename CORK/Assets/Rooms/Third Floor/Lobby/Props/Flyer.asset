@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8bdd3c1d79d6934793f96f094bf50e8, type: 3}
+  m_Name: Flyer
+  m_EditorClassIdentifier: Assembly-CSharp::CORK.Data.Props.PropData
+  propName: Flyer
+  description: 'A flyer sits on one of the empty tables. It has the following printed
+    on it: "Have you seen this student? They are failing their Compiliers class,
+    and have been found to carry around a large bag to carry whatever they can inside
+    of it. They are also suspected to have caused issues for faculty. If you see
+    this person, please report them to campus security." Below that is a picture...of
+    your face!'
+  canBeTaken: 1
+  takeMessage: You swipe the flyer and crinkle it up into a ball hastily, depositing
+    it into your bag. You take a glance around, but it seems like everyone has been
+    too busy with finals to have noticed.
+  cantTakeMessage: 
+  propImage: {fileID: 0}
+  hasBeenDiscovered: 0
