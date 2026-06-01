@@ -16,4 +16,7 @@ MonoBehaviour:
   - speakerName: Bartender
     text: What'll you have?
   - speakerName: Bartender
-    text: Red Bull's two bucks. I don't run a charity.
+    text: 'Red Bull''s two bucks. I don''t run a charity.
+
+      [TRY: "give two
+      dollar bill to bartender"(must have two dollar bill)]'

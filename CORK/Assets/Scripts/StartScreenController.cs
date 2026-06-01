@@ -14,9 +14,16 @@ public class StartScreenController : MonoBehaviour
     void Update()
     {
         var kb = Keyboard.current;
-        if (kb != null && (kb.enterKey.wasPressedThisFrame || kb.numpadEnterKey.wasPressedThisFrame))
+        if (kb == null) return;
+
+        if (kb.enterKey.wasPressedThisFrame || kb.numpadEnterKey.wasPressedThisFrame)
         {
             SceneManager.LoadScene(nextSceneName);
+        }
+
+        if (kb.escapeKey.wasPressedThisFrame)
+        {
+            Application.Quit();
         }
     }
 }

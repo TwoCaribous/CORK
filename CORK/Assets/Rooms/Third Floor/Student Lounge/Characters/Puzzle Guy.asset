@@ -18,7 +18,7 @@ MonoBehaviour:
     I''ve never learned their name; I''ve only known them as the Puzzle Guy. '
   characterType: 1
   portrait: {fileID: 0}
-  hasBeenMet: 1
+  hasBeenMet: 0
   ambientLines:
   - speakerName: Puzzle Guy
     text: 'Can''t you see I''m busy?! I can''t find some of these pieces! '

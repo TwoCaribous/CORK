@@ -165,13 +165,16 @@ public class GameController : MonoBehaviour
             "  take [thing]                - pick something up\n" +
             "  open [thing]                - open a container\n" +
             "  give [item] to [person]     - hand something to someone. You must use the exact name (e.g. 'give key to guard')\n" +
-            "  use [item] on [thing]       - use an item on something (e.g. 'use eagle card on lobby')\n" +
+            "  use [item] on [thing]       - use an item on something (e.g. 'use key on hallway')\n" +
             "  drop [item]                 - drop something from your inventory\n" +
             "  inventory                   - list what you're carrying\n" +
             "  inventory [item]            - examine a carried item\n" +
             "  pull [thing]                - pull something in the environment\n" +
             "  help                        - show this list\n" +
             "  exit                        - quit to the start screen\n" +
+            "  GENERAL HELP: When using the move, give, or use commands, use the exact names\n" +
+            "  GENERAL HELP: Some commands do not need exact names. Instead, you can use words from the description\n" +
+            "                When you read 'A book sits on a table', you can refer to it as 'book' or 'book on table'\n" +
             "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━";
     }
 
@@ -284,7 +287,7 @@ public class GameController : MonoBehaviour
         else
         {
             roomImageDisplay.sprite = null;
-            roomImageDisplay.color = new Color(0.15f, 0.15f, 0.15f, 1f);
+            roomImageDisplay.color = Color.black;
             ApplyRoomImageMaterial(false);
         }
     }
@@ -307,7 +310,7 @@ public class GameController : MonoBehaviour
         else
         {
             roomImageDisplay.sprite = null;
-            roomImageDisplay.color = new Color(0.15f, 0.15f, 0.15f, 1f);
+            roomImageDisplay.color = Color.black;
             ApplyRoomImageMaterial(false);
         }
     }

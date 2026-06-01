@@ -17,7 +17,7 @@ MonoBehaviour:
     it seems.
   characterType: 1
   portrait: {fileID: 0}
-  hasBeenMet: 1
+  hasBeenMet: 0
   ambientLines:
   - speakerName: 
     text: 'Hey, do you have any-
